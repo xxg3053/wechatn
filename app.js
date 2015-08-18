@@ -17,7 +17,7 @@ app.get('/', function(req, res) {
     if (weixin.checkSignature(req)) {
         res.send(200, req.query.echostr);
     } else {
-        res.send(200, 'fail');
+        res.send(200, 'sorry, fail ! this is the wechat interface!');
     }
 });
 

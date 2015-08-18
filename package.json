@@ -6,7 +6,8 @@
   "dependencies": {
     "xml2js": "^0.4.10",
     "body-parser": "~1.13.2",
-    "sha1": "1.0.1"
+    "ejs": ">=1.0.0",
+    "wechat-crypto": "0.0.2"
   },
   "devDependencies": {},
   "scripts": {
