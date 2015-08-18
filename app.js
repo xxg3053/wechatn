@@ -9,10 +9,10 @@ http.createServer(function (req, res) {
   //监听文本信息
   wechat.text(function (data) {
 
-    //console.log(data.ToUserName);
-    //console.log(data.FromUserName);
-    //console.log(data.CreateTime);
-    //console.log(data.MsgType);
+    console.log(data.ToUserName);
+    console.log(data.FromUserName);
+    console.log(data.CreateTime);
+    console.log(data.MsgType);
     //...
 
     var msg = {
