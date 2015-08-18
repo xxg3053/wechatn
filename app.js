@@ -1,9 +1,11 @@
 var express = require('express'),
     weixin = require('./lib/weixin_api.js'),
+    bodyParser = require('body-parser'),
     app = express();
 
 // 解析器
-app.use(express.bodyParser());
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.json());
 
 // config
 weixin.token = 'KENFOWEIXIN';
