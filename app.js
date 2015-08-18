@@ -1,129 +1,124 @@
-var http = require('http'),
-    wechat = require('./lib/Wechat.js')('KENFOWEIXIN');
+var express = require('express'),
+    weixin = require('./lib/weixin_api.js'),
+    app = express();
 
-http.createServer(function (req, res) {
-  //检验 token
-  wechat.checkSignature(req, res);
-  //预处理
-  wechat.handler(req, res);
-  //监听文本信息
-  wechat.text(function (data) {
+// 解析器
+app.use(express.bodyParser());
 
-    console.log(data.ToUserName);
-    console.log(data.FromUserName);
-    console.log(data.CreateTime);
-    console.log(data.MsgType);
-    //...
+// config
+weixin.token = 'KENFOWEIXIN';
 
-    var msg = {
-      FromUserName : data.ToUserName,
-      ToUserName : data.FromUserName,
-      //MsgType : "music",
-      Title : "宋冬野",
-      Description : "宋冬野——摩登天空7",
-      MusicUrl : "http://zhangmenshiting.baidu.com/data2/music/71272862/44897031226800128.mp3?xcode=8c25fcb0e8157c1d4ee014e7c541cba8c3b34145ef4199ad",
-      //HQMusicUrl : "http://zhangmenshiting.baidu.com/data2/music/71272862/44897031226800128.mp3?xcode=8c25fcb0e8157c1d4ee014e7c541cba8c3b34145ef4199ad",
-      //FuncFlag : 0
+// 接入验证
+app.get('/', function(req, res) {
+
+    // 签名成功
+    if (weixin.checkSignature(req)) {
+        res.send(200, req.query.echostr);
+    } else {
+        res.send(200, 'fail');
+    }
+});
+
+// 监听文本消息
+weixin.textMsg(function(msg) {
+    console.log("textMsg received");
+    console.log(JSON.stringify(msg));
+
+    var resMsg = {};
+
+    switch (msg.content) {
+        case "文本" :
+            // 返回文本消息
+            resMsg = {
+                fromUserName : msg.toUserName,
+                toUserName : msg.fromUserName,
+                msgType : "text",
+                content : "这是文本回复",
+                funcFlag : 0
+            };
+            break;
+
+        case "音乐" :
+            // 返回音乐消息
+            resMsg = {
+                fromUserName : msg.toUserName,
+                toUserName : msg.fromUserName,
+                msgType : "music",
+                title : "音乐标题",
+                description : "音乐描述",
+                musicUrl : "音乐url",
+                HQMusicUrl : "高质量音乐url",
+                funcFlag : 0
+            };
+            break;
+
+        case "图文" :
+
+            var articles = [];
+            articles[0] = {
+                title : "PHP依赖管理工具Composer入门",
+                description : "PHP依赖管理工具Composer入门",
+                picUrl : "http://weizhifeng.net/images/tech/composer.png",
+                url : "http://weizhifeng.net/manage-php-dependency-with-composer.html"
+            };
+
+            articles[1] = {
+                title : "八月西湖",
+                description : "八月西湖",
+                picUrl : "http://weizhifeng.net/images/poem/bayuexihu.jpg",
+                url : "http://weizhifeng.net/bayuexihu.html"
+            };
+
+            articles[2] = {
+                title : "「翻译」Redis协议",
+                description : "「翻译」Redis协议",
+                picUrl : "http://weizhifeng.net/images/tech/redis.png",
+                url : "http://weizhifeng.net/redis-protocol.html"
+            };
+
+            // 返回图文消息
+            resMsg = {
+                fromUserName : msg.toUserName,
+                toUserName : msg.fromUserName,
+                msgType : "news",
+                articles : articles,
+                funcFlag : 0
+            }
     }
 
-    //回复信息
-    wechat.send(msg);
-  });
+    weixin.sendMsg(resMsg);
+});
 
-  //监听图片信息
-  wechat.image(function (data) {
-    var msg = {
-      FromUserName : data.ToUserName,
-      ToUserName : data.FromUserName,
-      //MsgType : "text",
-      Content : "这是图片回复"
-    }
-    wechat.send(msg);
-  });
+// 监听图片消息
+weixin.imageMsg(function(msg) {
+    console.log("imageMsg received");
+    console.log(JSON.stringify(msg));
+});
 
-  //监听地址信息
-  wechat.location(function (data) {
-    var msg = {
-      FromUserName : data.ToUserName,
-      ToUserName : data.FromUserName,
-      //MsgType : "text",
-      Content : "这是地址回复"
-    }
-    wechat.send(msg);
-  });
+// 监听位置消息
+weixin.locationMsg(function(msg) {
+    console.log("locationMsg received");
+    console.log(JSON.stringify(msg));
+});
 
-  //监听链接信息
-  wechat.link(function (data) {
-    var msg = {
-      FromUserName : data.ToUserName,
-      ToUserName : data.FromUserName,
-      //MsgType : "text",
-      Content : "这是链接回复"
-    }
-    wechat.send(msg);
-  });
+// 监听链接消息
+weixin.urlMsg(function(msg) {
+    console.log("urlMsg received");
+    console.log(JSON.stringify(msg));
+});
 
-  //监听事件信息
-  wechat.event(function (data) {
-    var msg = {
-      FromUserName : data.ToUserName,
-      ToUserName : data.FromUserName,
-      //MsgType : "text",
-      Content : (data.Event == "subscribe") ? "欢迎订阅" : "欢迎再次订阅"
-    }
-    wechat.send(msg);
-  });
+// 监听事件消息
+weixin.eventMsg(function(msg) {
+    console.log("eventMsg received");
+    console.log(JSON.stringify(msg));
+});
 
-  //监听语音信息
-  wechat.voice(function (data) {
-    var msg = {
-      FromUserName : data.ToUserName,
-      ToUserName : data.FromUserName,
-      //MsgType : "text",
-      Content : "这是语音回复"
-    }
-    wechat.send(msg);
-  });
+// Start
+app.post('/', function(req, res) {
 
-  //监听视频信息
-  wechat.video(function (data) {
-    var msg = {
-      FromUserName : data.ToUserName,
-      ToUserName : data.FromUserName,
-      //MsgType : "text",
-      Content : "这是视频回复"
-    }
-    wechat.send(msg);
-  });
+    // loop
+    weixin.loop(req, res);
 
-  //监听所有信息
-  wechat.all(function (data) {
-    var msg = {
-      FromUserName : data.ToUserName,
-      ToUserName : data.FromUserName,
-      //MsgType : "news",
-      Articles : [
-        {
-          Title: "习近平印尼国会演讲 向现场观众问好:阿巴嘎坝",
-          Description: "央广网雅加达10月3日消息 北京时间3日上午11时许，正在印度尼西亚进行国事访问的中国国家主席习近平，在印尼国会发表重要演讲，阐述如何进一步促进双边关系、中国与东盟关系发展的构想，以及中国和平发展的理念。",
-          PicUrl: "http://news.cnr.cn/special/xjp4/zb/zy/201310/W020131003454716456595.jpg",
-          Url: "http://news.cnr.cn/special/xjp4/zb/zy/201310/t20131003_513743132.shtml"
-        },
-        {
-          Title: "九寨沟：少数游客拦车翻栈道致交通瘫痪",
-          Description: "10月2日，九寨沟发生大规模游客滞留事件。因不满长时间候车，部分游客围堵景区接送车辆，导致上下山通道陷入瘫痪。大批游客被迫步行十几公里下山，包括80岁老人及9个月小孩。入夜后，游客围住售票处要求退票，并一度“攻陷”售票处。10月3日凌晨，九寨沟管理局、阿坝大九旅集团九寨沟旅游分公司发致歉书向游客致歉。",
-          PicUrl: "http://www.chinadaily.com.cn/dfpd/shehui/attachement/jpg/site1/20131003/a41f726719b213b7156402.jpg",
-          Url: "http://www.chinadaily.com.cn/dfpd/shehui/2013-10/03/content_17008311.htm"  
-        },
-        {
-          Title: "美政府关门第二天 官民高呼“伤不起”",
-          Description: "中新社华盛顿10月2日电 (记者 张蔚然)美国政府“关门”进入第二天，白宫与国会对峙僵局未破，美国继续在“喊话”模式中运转。越来越多的联邦部门和民众都在抱怨“伤不起”，调门越喊越高。",
-          PicUrl: "http://i1.hexunimg.cn/2013-10-03/158486762.jpg",
-          Url: "http://www.chinanews.com/gj/2013/10-03/5343908.shtml?f=baidu"
-        }
-      ]
-    }
-    wechat.send(msg);
-  });
+});
 
-}).listen(80);
+app.listen(80);
