@@ -13,35 +13,26 @@ var config = {
 
 app.set('port', process.env.VCAP_APP_PORT || 3000);
 app.use(express.query());
-app.use('/wechat', wechat(config, function (req, res, next) {
-
-  // 微信输入信息都在req.weixin上
-  var message = req.weixin;
-  //console.log('message'+JSON.stringify(message));
-  //ToUserName  FromUserName  CreateTime MsgType Content MsgId
-  console.log("Context:"+message.Content);
-  if (message.Content === 'hh') {
-    // 回复屌丝(普通回复)
-    res.reply('嘿嘿！');
-  } else if (message.Content === 'text') {
-    //你也可以这样回复text类型的信息
-    res.reply({
-      content: 'text object',
-      type: 'text'
-    });
-  } else if (message.Content=== 'music') {
-    // 回复一段音乐
-    res.reply({
-      type: "music",
-      content: {
-        title: "来段音乐吧",
-        description: "一无所有",
-        musicUrl: "http://mp3.com/xx.mp3",
-        hqMusicUrl: "http://mp3.com/xx.mp3",
-        thumbMediaId: "thisThumbMediaId"
-      }
-    });
-  } else if (message.Content=== 'list'){
+app.use('/wechat', wechat('KENFOWEIXIN').text(function (message, req, res, next) {
+     if (message.Content === 'hh') {
+          res.reply('嘿嘿！');
+      } else if (message.Content === 'text') {
+        res.reply({
+          content: 'text object',
+          type: 'text'
+        });
+      } else if (message.Content=== 'music') {
+          res.reply({
+            type: "music",
+            content: {
+              title: "来段音乐吧",
+              description: "一无所有",
+              musicUrl: "http://mp3.com/xx.mp3",
+              hqMusicUrl: "http://mp3.com/xx.mp3",
+              thumbMediaId: "thisThumbMediaId"
+            }
+          });
+      } else if (message.Content=== 'list'){
            var List = wechat.List;
             List.add('view', [
               ['回复{a}查看我的性别', function (info, req, res) {
@@ -55,18 +46,34 @@ app.use('/wechat', wechat(config, function (req, res, next) {
 
             res.wait('view');
 
-  }else {
-    // 回复高富帅(图文回复)
-    res.reply([
-      {
-        title: '你来我家接我吧',
-        description: '这是女神与高富帅之间的对话',
-        picurl: 'http://nodeapi.cloudfoundry.com/qrcode.jpg',
-        url: 'http://nodeapi.cloudfoundry.com/'
+      }else {
+        res.reply([
+          {
+            title: '我美吗？',
+            description: '其实这是个显而易见的事情，你说是吗？',
+            picurl: 'http://7xky7l.com1.z0.glb.clouddn.com/IMG_7576.JPG',
+            url: 'http://104.131.144.192/'
+          }
+        ]);
       }
-    ]);
-  }
-}));
+
+}).image(function (message, req, res, next) {
+  // TODO
+}).voice(function (message, req, res, next) {
+  // TODO
+}).video(function (message, req, res, next) {
+  // TODO
+}).location(function (message, req, res, next) {
+  // TODO
+}).link(function (message, req, res, next) {
+  // TODO
+}).event(function (message, req, res, next) {
+  // TODO
+}).device_text(function (message, req, res, next) {
+  // TODO
+}).device_event(function (message, req, res, next) {
+  // TODO
+}).middlewarify())
 
 server.listen(app.get('port'), function () {
     console.log('wechat listening on port ' + app.get('port'));
