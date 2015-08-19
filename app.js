@@ -19,17 +19,17 @@ app.use('/wechat', wechat(config, function (req, res, next) {
   var message = req.weixin;
   //console.log('message'+JSON.stringify(message));
   //ToUserName  FromUserName  CreateTime MsgType Content MsgId
-  
-  if (message.Context === 'hh') {
+  console.log("Context:"+message.Content);
+  if (message.Content === 'hh') {
     // 回复屌丝(普通回复)
     res.reply('嘿嘿！');
-  } else if (message.Context === 'text') {
+  } else if (message.Content === 'text') {
     //你也可以这样回复text类型的信息
     res.reply({
       content: 'text object',
       type: 'text'
     });
-  } else if (message.Context=== 'music') {
+  } else if (message.Content=== 'music') {
     // 回复一段音乐
     res.reply({
       type: "music",
@@ -41,7 +41,7 @@ app.use('/wechat', wechat(config, function (req, res, next) {
         thumbMediaId: "thisThumbMediaId"
       }
     });
-  } else if (message.Context=== 'list'){
+  } else if (message.Content=== 'list'){
            var List = wechat.List;
             List.add('view', [
               ['回复{a}查看我的性别', function (info, req, res) {
