@@ -1,7 +1,7 @@
 module.exports = {
   secret: 'secret',
   port: process.env.PORT || 3000,
-  remote:'http://104.131.144.192:3000',
+  remote:'http://104.131.144.192/node',
   corp: {
     token: 'YOUR token',
     encodingAESKey: 'YOUR encodingAESKey',

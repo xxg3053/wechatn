@@ -6,8 +6,8 @@ exports.reply = wechat(config.mp, wechat.text(function (message, req, res){
 	console.log(message);
     var input = (message.Content || '').trim();
 
-     if (input === 'hh') {
-          res.reply('嘿嘿！');
+     if (input === 'help') {
+          res.reply('输入@+英文单词翻译\n输入#+电话查看电话来源\n等等...');
       } else if (input === 'text') {
         res.reply({
           content: 'text object',
@@ -42,7 +42,7 @@ exports.reply = wechat(config.mp, wechat.text(function (message, req, res){
         res.reply([
           {
             title: '我美吗？',
-            description: '其实这是个显而易见的事情，你说是吗？',
+            description: '其实这是个显而易见的事情，你说是吗？更多功能请输入[help]查看',
             picurl: 'http://7xky7l.com1.z0.glb.clouddn.com/IMG_7576.JPG',
             url: config.remote + "/m/violet"
           }
