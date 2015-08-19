@@ -1,126 +1,57 @@
 var express = require('express'),
-    weixin = require('./lib/weixin_api.js'),
-    bodyParser = require('body-parser'),
-    app = express();
+    wechat = require('wechat'),
+    http = require('http');
 
-// 解析器
-app.use(bodyParser.urlencoded({extended:true}));
-app.use(bodyParser.json());
+var app = express();
+var server = http.createServer(app);
 
-// config
-weixin.token = 'KENFOWEIXIN';
+var config = {
+  token: 'KENFOWEIXIN',
+  appid: 'wx74d59fbce4fde733',
+  encodingAESKey: '0dgy8Ry4aEjD0b4M0NbVlZAjZ2sB8YX4zaZBnritvI8'
+};
 
-// 接入验证
-app.get('/', function(req, res) {
+app.set('port', process.env.VCAP_APP_PORT || 3000);
+app.use(express.query());
+app.use('/wechat', wechat(config, function (req, res, next) {
+  // 微信输入信息都在req.weixin上
+  var message = req.weixin;
+  console.log('message:'+message);
+  
+  if (message.FromUserName === 'diaosi') {
+    // 回复屌丝(普通回复)
+    res.reply('hehe');
+  } else if (message.FromUserName === 'text') {
+    //你也可以这样回复text类型的信息
+    res.reply({
+      content: 'text object',
+      type: 'text'
+    });
+  } else if (message.FromUserName === 'hehe') {
+    // 回复一段音乐
+    res.reply({
+      type: "music",
+      content: {
+        title: "来段音乐吧",
+        description: "一无所有",
+        musicUrl: "http://mp3.com/xx.mp3",
+        hqMusicUrl: "http://mp3.com/xx.mp3",
+        thumbMediaId: "thisThumbMediaId"
+      }
+    });
+  } else {
+    // 回复高富帅(图文回复)
+    res.reply([
+      {
+        title: '你来我家接我吧',
+        description: '这是女神与高富帅之间的对话',
+        picurl: 'http://nodeapi.cloudfoundry.com/qrcode.jpg',
+        url: 'http://nodeapi.cloudfoundry.com/'
+      }
+    ]);
+  }
+}));
 
-    // 签名成功
-    if (weixin.checkSignature(req)) {
-        res.send(200, req.query.echostr);
-    } else {
-        res.send(200, 'sorry, fail ! this is the wechat interface!');
-    }
+server.listen(app.get('port'), function () {
+    console.log('wechat listening on port ' + app.get('port'));
 });
-
-// 监听文本消息
-weixin.textMsg(function(msg) {
-    console.log("textMsg received");
-    console.log(JSON.stringify(msg));
-
-    var resMsg = {};
-
-    switch (msg.content) {
-        case "文本" :
-            // 返回文本消息
-            resMsg = {
-                fromUserName : msg.toUserName,
-                toUserName : msg.fromUserName,
-                msgType : "text",
-                content : "这是文本回复",
-                funcFlag : 0
-            };
-            break;
-
-        case "音乐" :
-            // 返回音乐消息
-            resMsg = {
-                fromUserName : msg.toUserName,
-                toUserName : msg.fromUserName,
-                msgType : "music",
-                title : "音乐标题",
-                description : "音乐描述",
-                musicUrl : "音乐url",
-                HQMusicUrl : "高质量音乐url",
-                funcFlag : 0
-            };
-            break;
-
-        case "图文" :
-
-            var articles = [];
-            articles[0] = {
-                title : "PHP依赖管理工具Composer入门",
-                description : "PHP依赖管理工具Composer入门",
-                picUrl : "http://weizhifeng.net/images/tech/composer.png",
-                url : "http://weizhifeng.net/manage-php-dependency-with-composer.html"
-            };
-
-            articles[1] = {
-                title : "八月西湖",
-                description : "八月西湖",
-                picUrl : "http://weizhifeng.net/images/poem/bayuexihu.jpg",
-                url : "http://weizhifeng.net/bayuexihu.html"
-            };
-
-            articles[2] = {
-                title : "「翻译」Redis协议",
-                description : "「翻译」Redis协议",
-                picUrl : "http://weizhifeng.net/images/tech/redis.png",
-                url : "http://weizhifeng.net/redis-protocol.html"
-            };
-
-            // 返回图文消息
-            resMsg = {
-                fromUserName : msg.toUserName,
-                toUserName : msg.fromUserName,
-                msgType : "news",
-                articles : articles,
-                funcFlag : 0
-            }
-    }
-
-    weixin.sendMsg(resMsg);
-});
-
-// 监听图片消息
-weixin.imageMsg(function(msg) {
-    console.log("imageMsg received");
-    console.log(JSON.stringify(msg));
-});
-
-// 监听位置消息
-weixin.locationMsg(function(msg) {
-    console.log("locationMsg received");
-    console.log(JSON.stringify(msg));
-});
-
-// 监听链接消息
-weixin.urlMsg(function(msg) {
-    console.log("urlMsg received");
-    console.log(JSON.stringify(msg));
-});
-
-// 监听事件消息
-weixin.eventMsg(function(msg) {
-    console.log("eventMsg received");
-    console.log(JSON.stringify(msg));
-});
-
-// Start
-app.post('/', function(req, res) {
-
-    // loop
-    weixin.loop(req, res);
-
-});
-
-app.listen(80);
