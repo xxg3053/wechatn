@@ -15,31 +15,21 @@ app.set('port', process.env.VCAP_APP_PORT || 3000);
 app.use(express.query());
 app.use('/wechat', wechat(config, function (req, res, next) {
 
-  var List = require('wechat').List;
-  List.add('view', [
-    ['回复{a}查看我的性别', function (info, req, res) {
-      res.reply('我是个妹纸哟');
-    }],
-    ['回复{b}查看我的年龄', function (info, req, res) {
-      res.reply('我今年18岁');
-    }],
-    ['回复{c}查看我的性取向', '这样的事情怎么好意思告诉你啦- -']
-  ]);
-
   // 微信输入信息都在req.weixin上
   var message = req.weixin;
-  console.log('message'+JSON.stringify(message));
+  //console.log('message'+JSON.stringify(message));
+  //ToUserName  FromUserName  CreateTime MsgType Content MsgId
   
-  if (message.FromUserName === 'diaosi') {
+  if (message.Context === 'hh') {
     // 回复屌丝(普通回复)
-    res.reply('hehe');
-  } else if (message.FromUserName === 'text') {
+    res.reply('嘿嘿！');
+  } else if (message.Context === 'text') {
     //你也可以这样回复text类型的信息
     res.reply({
       content: 'text object',
       type: 'text'
     });
-  } else if (message.FromUserName === 'hehe') {
+  } else if (message.Context=== 'music') {
     // 回复一段音乐
     res.reply({
       type: "music",
@@ -51,7 +41,21 @@ app.use('/wechat', wechat(config, function (req, res, next) {
         thumbMediaId: "thisThumbMediaId"
       }
     });
-  } else {
+  } else if (message.Context=== 'list'){
+           var List = wechat.List;
+            List.add('view', [
+              ['回复{a}查看我的性别', function (info, req, res) {
+                res.reply('我是个妹纸哟');
+              }],
+              ['回复{b}查看我的年龄', function (info, req, res) {
+                res.reply('我今年18岁');
+              }],
+              ['回复{c}查看我的性取向', '这样的事情怎么好意思告诉你啦- -']
+            ]);
+
+            res.wait('view');
+
+  }else {
     // 回复高富帅(图文回复)
     res.reply([
       {
