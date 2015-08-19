@@ -44,7 +44,7 @@ exports.reply = wechat(config.mp, wechat.text(function (message, req, res){
             title: '我美吗？',
             description: '其实这是个显而易见的事情，你说是吗？',
             picurl: 'http://7xky7l.com1.z0.glb.clouddn.com/IMG_7576.JPG',
-            url: 'http://104.131.144.192/'
+            url: config.remote + "/m/violet"
           }
         ]);
       }

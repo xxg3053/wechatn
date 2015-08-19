@@ -1,34 +1,33 @@
 var config = require('./config'),
     mp = require('./controllers/wechat_mp'),
     express = require('express'),
+    path = require('path'),
+    bodyParser = require('body-parser'),
     wechat = require('wechat'),
-    http = require('http'),
-    connect = require('connect'),
     cookieParser = require('cookie-parser'),
     session = require('express-session');
 
 var app = express();
-var server = http.createServer(app);
-
-
-app.set('port', process.env.VCAP_APP_PORT || 3000);
-app.use(express.query());
+//格式化提交表单
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.json());
+//模板引擎
+app.set('views','./views/pages');
+app.set('view engine','jade');
+app.use(express.static(path.join(__dirname,'public')));
+app.locals.moment = require('moment')//格式化时间
 //WXSession支持
 app.use(cookieParser());
 app.use(session({
-    secret: 'keyboard cat', 
+    secret: config.secret, 
     cookie: {maxAge: 60000},
     resave: false,
     saveUninitialized: true
   }));
 
-app.use('/wechat', mp.reply);
+//导入路由
+require('./routes/route')(app);
 
-app.use('/', function (req, res) {
-  res.writeHead(200);
-  res.end('welcome to kenfo’s world');
-});
-
-server.listen(app.get('port'), function () {
-    console.log('wechat listening on port ' + app.get('port'));
-});
+//启动服务
+app.listen(config.port);
+console.log('wechat server started on port ' + config.port);
