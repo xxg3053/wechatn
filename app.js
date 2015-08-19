@@ -38,10 +38,10 @@ app.use('/wechat', wechat('KENFOWEIXIN').text(function (message, req, res, next)
             type: "music",
             content: {
               title: "来段音乐吧",
-              description: "一无所有",
-              musicUrl: "http://mp3.com/xx.mp3",
-              hqMusicUrl: "http://mp3.com/xx.mp3",
-              thumbMediaId: "thisThumbMediaId"
+              description: "吻别",
+              musicUrl: "http://7xky7l.com1.z0.glb.clouddn.com/wb.mp3",
+              hqMusicUrl: "http://7xky7l.com1.z0.glb.clouddn.com/wb.mp3"
+              ///thumbMediaId: "thisThumbMediaId"
             }
           });
       } else if (message.Content=== 'list'){
