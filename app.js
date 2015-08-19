@@ -14,9 +14,21 @@ var config = {
 app.set('port', process.env.VCAP_APP_PORT || 3000);
 app.use(express.query());
 app.use('/wechat', wechat(config, function (req, res, next) {
+
+  var List = require('wechat').List;
+  List.add('view', [
+    ['回复{a}查看我的性别', function (info, req, res) {
+      res.reply('我是个妹纸哟');
+    }],
+    ['回复{b}查看我的年龄', function (info, req, res) {
+      res.reply('我今年18岁');
+    }],
+    ['回复{c}查看我的性取向', '这样的事情怎么好意思告诉你啦- -']
+  ]);
+
   // 微信输入信息都在req.weixin上
   var message = req.weixin;
-  console.log('message:'+message);
+  console.log('message'+JSON.stringify(message));
   
   if (message.FromUserName === 'diaosi') {
     // 回复屌丝(普通回复)
