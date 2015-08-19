@@ -9,7 +9,7 @@ module.exports = function(app){
 	  res.end(str);
 	});
 	//微信接口
-	app.get('/wechat', WechatCtrl.reply);
+	app.use('/wechat', WechatCtrl.reply);
 	//mobile
 	app.get('/m/violet',VioletCtrl.list)
 };
