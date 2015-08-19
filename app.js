@@ -1,6 +1,9 @@
 var express = require('express'),
     wechat = require('wechat'),
-    http = require('http');
+    http = require('http'),
+    connect = require('connect'),
+    cookieParser = require('cookie-parser'),
+    session = require('express-session');
 
 var app = express();
 var server = http.createServer(app);
@@ -13,6 +16,15 @@ var config = {
 
 app.set('port', process.env.VCAP_APP_PORT || 3000);
 app.use(express.query());
+//WXSession支持
+app.use(cookieParser());
+app.use(session({
+    secret: 'keyboard cat', 
+    cookie: {maxAge: 60000},
+    resave: false,
+    saveUninitialized: true
+  }));
+
 app.use('/wechat', wechat('KENFOWEIXIN').text(function (message, req, res, next) {
      if (message.Content === 'hh') {
           res.reply('嘿嘿！');
