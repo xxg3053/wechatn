@@ -1,0 +1,25 @@
+{
+  "name": "wechatn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "http": "^0.0.0",
+    "wechat": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xxg3053/wechatn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xxg3053/wechatn/issues"
+  },
+  "homepage": "https://github.com/xxg3053/wechatn#readme"
+}
