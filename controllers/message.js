@@ -24,12 +24,12 @@ exports.add = function(ToUserName,FromUserName,CreateTime,MsgType, Content,Event
 	});
 };
 
-exports.list = function(){
+exports.list = function(callback){
 	Message.fetch(function(err,messages){
 		if(err){
 			console.log(err)
 		}
 		console.log("find all message : "+ messages);
-		return messages;
+		callback(JSON.stringify(messages));
 	})
 };

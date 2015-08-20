@@ -21,11 +21,7 @@ exports.reply = wechat(config.mp, wechat.text(function (message, req, res){
         //   content: 'text object' + ideal,
         //   type: 'text'
         // });
-      var ms = messageCtrl.list();
-      console.log("message==="+ms);
-       res.reply(JSON.stringify(ms));
-
-
+        messageCtrl.list(res.reply);
       } else if (input=== 'music') {
           res.reply({
             type: "music",
