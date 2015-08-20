@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 //模板引擎
 app.set('views','./views/pages');
 app.set('view engine','jade');
-app.use(serveStatic(__dirname + 'public'));
+app.use(serveStatic(__dirname + '/public'));
 app.locals.moment = require('moment')//格式化时间
 //WXSession支持
 app.use(cookieParser());
