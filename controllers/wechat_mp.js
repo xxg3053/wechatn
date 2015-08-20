@@ -1,10 +1,16 @@
 var wechat = require('wechat'),
-    config = require('../config');
+    config = require('../config'),
+    messageCtrl = require('../controllers/message');
 
 
 exports.reply = wechat(config.mp, wechat.text(function (message, req, res){
 	console.log(message);
     var input = (message.Content || '').trim();
+    //保存数据到message中
+    console.log("保存数据开始...");
+    messageCtrl.add(message.ToUserName,message.FromUserName,message.CreateTime,message.MsgType, message.Content,"text","","","",message.MsgId);
+    console.log("保存数据结束...");
+
       if(message.FromUserName === 'oI9-pjjZcbtnhxnygYWrR8mTdFLY'){
         res.reply("亲爱的，你老公很爱很爱你，情人节快乐！么么么");
       }

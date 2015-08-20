@@ -5,9 +5,16 @@ var config = require('./config'),
     bodyParser = require('body-parser'),
     wechat = require('wechat'),
     cookieParser = require('cookie-parser'),
-    session = require('express-session');
+    session = require('express-session'),
+    mongoose = require('mongoose'),
+    mongoStore = require('connect-mongo')(session),
+    morgan = require('morgan');
 
 var app = express();
+//连接数据库
+var dbUrl = "mongodb://localhost/wechatn";
+mongoose.connect(dbUrl)
+
 //格式化提交表单
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
@@ -20,10 +27,13 @@ app.locals.moment = require('moment')//格式化时间
 app.use(cookieParser());
 app.use(session({
     secret: config.secret, 
-    cookie: {maxAge: 60000},
-    resave: false,
-    saveUninitialized: true
+    store:new mongoStore({
+        url:dbUrl,
+        collection:'sessions'
+    })
   }));
+
+
 
 //导入路由
 require('./routes/route')(app);
