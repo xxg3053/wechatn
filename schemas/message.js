@@ -26,7 +26,7 @@ MessageSchema.statics = {
 	fetch:function(cb){
 		return this
 			.find({})
-			.sort('meta.updateAt')
+			.sort('CreateTime')
 			.exec(cb)
 	},
 	findById:function(id,cb){

@@ -30,7 +30,10 @@ app.use(session({
     store:new mongoStore({
         url:dbUrl,
         collection:'sessions'
-    })
+    }),
+    resave:true,
+    saveUninitialized:true
+
   }));
 
 

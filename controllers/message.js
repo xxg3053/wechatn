@@ -14,10 +14,8 @@ exports.add = function(ToUserName,FromUserName,CreateTime,MsgType, Content,Event
 			Latitude: Latitude,
 			Longitude: Longitude,
 			Precision: Precision,
-			MsgId: MsgId
+			MsgId: MsgId,
 	});
-	
-
 	message.save(function(err,message){
 		if(err){
 			console.log(err);
@@ -25,3 +23,12 @@ exports.add = function(ToUserName,FromUserName,CreateTime,MsgType, Content,Event
 		console.log("save message success :"+message);
 	});
 };
+
+exports.list = function(){
+	Message.fetch(function(err,users){
+		if(err){
+			console.log(err)
+		}
+		return users;
+	})
+}

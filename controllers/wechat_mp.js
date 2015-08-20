@@ -7,20 +7,21 @@ exports.reply = wechat(config.mp, wechat.text(function (message, req, res){
 	console.log(message);
     var input = (message.Content || '').trim();
     //保存数据到message中
-    console.log("保存数据开始...");
     messageCtrl.add(message.ToUserName,message.FromUserName,message.CreateTime,message.MsgType, message.Content,"text","","","",message.MsgId);
-    console.log("保存数据结束...");
 
+      var ideal = "";
       if(message.FromUserName === 'oI9-pjjZcbtnhxnygYWrR8mTdFLY'){
-        res.reply("亲爱的，你老公很爱很爱你，情人节快乐！么么么");
+        ideal = "\n亲爱的，你老公很爱很爱你，情人节快乐！么么么";
       }
-     if (input === 'help') {
-          res.reply('输入@+英文单词翻译\n输入#+电话查看电话来源\n等等...');
-      } else if (input === 'text') {
-        res.reply({
-          content: 'text object',
-          type: 'text'
-        });
+
+      if(input === 'help') {
+          res.reply('@ + 英文=翻译\n# + 电话=来源\n&messge=show message\n等等...' + ideal);
+      } else if (input === '%message') {
+        // res.reply({
+        //   content: 'text object' + ideal,
+        //   type: 'text'
+        // });
+       res.reply(JSON.stringify(messageCtrl.list());
       } else if (input=== 'music') {
           res.reply({
             type: "music",
@@ -50,7 +51,7 @@ exports.reply = wechat(config.mp, wechat.text(function (message, req, res){
         res.reply([
           {
             title: '我美吗？',
-            description: '其实这是个显而易见的事情，你说是吗？更多功能请输入[help]查看',
+            description: '其实这是个显而易见的事情，你说是吗？更多功能请输入[help]查看' + ideal,
             picurl: 'http://7xky7l.com1.z0.glb.clouddn.com/IMG_7576.JPG',
             url: config.remote + "/m/violet"
           }
@@ -73,9 +74,9 @@ exports.reply = wechat(config.mp, wechat.text(function (message, req, res){
 	  res.reply('点连接进来的是吧！');
 	}).event(function (message, req, res, next) {
 	  if (message.Event === 'subscribe'){
-	        res.reply('@ 翻译 & 查询 # 快递 ! \n谢谢关注~');
+	        res.reply('@ 翻译 & 查询 # 快递 ! \n谢谢关注~' + ideal);
 	   }else if(message.Event === 'unsubscribe'){
-	      res.reply('亲爱的，别走....');
+	      res.reply('亲爱的，别走....' + ideal);
 	   }
 
 	}).device_text(function (message, req, res, next) {
