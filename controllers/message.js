@@ -24,7 +24,7 @@ exports.add = function(ToUserName,FromUserName,CreateTime,MsgType, Content,Event
 	});
 };
 
-exports.list = function(callback){
+exports.listForWechat = function(callback){
 	Message.fetch(function(err,messages){
 		if(err){
 			console.log(err)
@@ -33,3 +33,15 @@ exports.list = function(callback){
 		callback(JSON.stringify(messages));
 	})
 };
+
+exports.list = function(req,res){
+	Message.fetch(function(err,messages){
+		if(err){
+			console.log(err)
+		}
+		res.render('messagelist',{
+			title:'消息列表',
+			messages:messages
+		})
+	})
+}

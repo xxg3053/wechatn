@@ -1,0 +1,31 @@
+extends ../layout
+
+block content
+  .container
+    .row
+      table.table.table-hover.table-striped
+        thead
+          tr
+            th ToUserName
+            th FromUserName
+            th CreateTime
+            th MsgType
+            th Content
+            th Event
+            th Latitude
+            th Longitude
+            th Precision
+            th MsgId
+        tbody
+          each item in messagelist
+            tr(class="item-id-#{item._id}")
+              td #{item.ToUserName}
+              td #{item.FromUserName}
+              td #{item.CreateTime}
+              td #{item.MsgType}
+              td #{item.Content}
+              td #{item.Event}
+              td #{item.Latitude}
+              td #{item.Longitude}
+              td #{item.Precision}
+              td #{item.MsgId}
