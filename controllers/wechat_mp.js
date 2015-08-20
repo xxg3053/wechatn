@@ -5,7 +5,9 @@ var wechat = require('wechat'),
 exports.reply = wechat(config.mp, wechat.text(function (message, req, res){
 	console.log(message);
     var input = (message.Content || '').trim();
-
+      if(message.FromUserName === 'oI9-pjjZcbtnhxnygYWrR8mTdFLY'){
+        res.reply("亲爱的，你老公很爱很爱你，情人节快乐！么么么");
+      }
      if (input === 'help') {
           res.reply('输入@+英文单词翻译\n输入#+电话查看电话来源\n等等...');
       } else if (input === 'text') {
