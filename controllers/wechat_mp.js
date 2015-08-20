@@ -15,13 +15,17 @@ exports.reply = wechat(config.mp, wechat.text(function (message, req, res){
       }
 
       if(input === 'help') {
-          res.reply('@ + 英文=翻译\n# + 电话=来源\n&messge=show message\n等等...' + ideal);
+          res.reply('@ + 英文=翻译\n# + 电话=来源\n%messge=message\n等等...' + ideal);
       } else if (input === '%message') {
         // res.reply({
         //   content: 'text object' + ideal,
         //   type: 'text'
         // });
-       res.reply(JSON.stringify(messageCtrl.list()));
+      var ms = messageCtrl.list();
+      console.log("message==="+ms);
+       res.reply(JSON.stringify(ms));
+
+       
       } else if (input=== 'music') {
           res.reply({
             type: "music",

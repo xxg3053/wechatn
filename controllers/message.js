@@ -25,10 +25,10 @@ exports.add = function(ToUserName,FromUserName,CreateTime,MsgType, Content,Event
 };
 
 exports.list = function(){
-	Message.fetch(function(err,users){
+	Message.fetch(function(err,messages){
 		if(err){
 			console.log(err)
 		}
-		return users;
+		return messages;
 	})
-}
+};
