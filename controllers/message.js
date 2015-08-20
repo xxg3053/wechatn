@@ -29,6 +29,7 @@ exports.list = function(){
 		if(err){
 			console.log(err)
 		}
+		console.log("find all message : "+ messages);
 		return messages;
 	})
 };

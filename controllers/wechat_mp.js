@@ -4,7 +4,7 @@ var wechat = require('wechat'),
 
 
 exports.reply = wechat(config.mp, wechat.text(function (message, req, res){
-	console.log(message);
+	   //console.log(message);
     var input = (message.Content || '').trim();
     //保存数据到message中
     messageCtrl.add(message.ToUserName,message.FromUserName,message.CreateTime,message.MsgType, message.Content,"text","","","",message.MsgId);
@@ -25,7 +25,7 @@ exports.reply = wechat(config.mp, wechat.text(function (message, req, res){
       console.log("message==="+ms);
        res.reply(JSON.stringify(ms));
 
-       
+
       } else if (input=== 'music') {
           res.reply({
             type: "music",
