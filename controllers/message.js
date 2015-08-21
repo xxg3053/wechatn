@@ -44,9 +44,9 @@ exports.list = function(req,res){
 		// 	messages:messages
 		// })
 	var result = {
-		status:200;
-		message:"success";
-		data:messages;
+		status:200,
+		message:"success",
+		data:messages
 	};
 	
 	res.send(JSON.stringify(result));  
