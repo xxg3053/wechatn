@@ -3,7 +3,7 @@
  */
 var Message = require('../models/message');
 
-exports.add = function(ToUserName,FromUserName,CreateTime,MsgType, Content,Event,Latitude,Longitude,Precision,MsgId) {
+exports.save = function(ToUserName,FromUserName,CreateTime,MsgType, Content,Event,Latitude,Longitude,Precision,MsgId) {
 	var message = new Message({
 			ToUserName: ToUserName,
 			FromUserName: FromUserName,
@@ -23,17 +23,6 @@ exports.add = function(ToUserName,FromUserName,CreateTime,MsgType, Content,Event
 		console.log("save message success :"+message);
 	});
 };
-
-exports.listForWechat = function(callback){
-	Message.fetch(function(err,messages){
-		if(err){
-			console.log(err)
-		}
-		console.log("find all message : "+ messages);
-		callback(JSON.stringify(messages));
-	})
-};
-
 exports.list = function(req,res){
 	Message.fetch(function(err,messages){
 		if(err){
@@ -51,4 +40,33 @@ exports.list = function(req,res){
 	
 	res.send(JSON.stringify(result));  
 	})
-}
+};
+
+exports.detail = function(req,res){
+	var id = req.params.id;
+	console.log('find one id:'+id);
+	Message.findById(id,function(err,message){
+		if(err){
+			console.log(err);
+		}
+		var result = {
+				status:200,
+				message:"success",
+				data:message
+			};
+		res.send(JSON.stringify(result));  
+	});
+};
+
+exports.delete = function(req,res){
+	var id = req.params.id;
+	console.log('delete one id:'+id);
+	if(Message.deleteById(id)){
+		var result = {
+					status:200,
+					message:"delete success",
+					data:""
+				};
+		res.send(JSON.stringify(result)); 
+	}
+};

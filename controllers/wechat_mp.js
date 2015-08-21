@@ -7,7 +7,7 @@ exports.reply = wechat(config.mp, wechat.text(function (message, req, res){
 	   //console.log(message);
     var input = (message.Content || '').trim();
     //保存数据到message中
-    messageCtrl.add(message.ToUserName,message.FromUserName,message.CreateTime,message.MsgType, message.Content,"text","","","",message.MsgId);
+    messageCtrl.save(message.ToUserName,message.FromUserName,message.CreateTime,message.MsgType, message.Content,"text","","","",message.MsgId);
 
       var ideal = "";
       if(message.FromUserName === 'oI9-pjjZcbtnhxnygYWrR8mTdFLY'){
@@ -15,14 +15,8 @@ exports.reply = wechat(config.mp, wechat.text(function (message, req, res){
       }
 
       if(input === 'help') {
-          res.reply('@ + 英文=翻译\n# + 电话=来源\n%messge=message\n等等...' + ideal);
-      } else if (input === '%message') {
-        // res.reply({
-        //   content: 'text object' + ideal,
-        //   type: 'text'
-        // });
-        messageCtrl.listForWechat(res.reply);
-      } else if (input=== 'music') {
+          res.reply('@ + 英文=翻译\n# + 电话=来源\n' + ideal);
+      }else if (input=== 'music') {
           res.reply({
             type: "music",
             content: {

@@ -1,0 +1,2097 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'E:\\nodejs\\\\node.exe',
+1 verbose cli   'E:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'wechat-api',
+1 verbose cli   '--save' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose install initial load of F:\workspaceforweb\node\wechatn\package.json
+5 verbose installManyTop reading scoped package data from F:\workspaceforweb\node\wechatn\node_modules\body-parser\package.json
+6 verbose installManyTop reading scoped package data from F:\workspaceforweb\node\wechatn\node_modules\connect-mongo\package.json
+7 verbose installManyTop reading scoped package data from F:\workspaceforweb\node\wechatn\node_modules\cookie-parser\package.json
+8 verbose installManyTop reading scoped package data from F:\workspaceforweb\node\wechatn\node_modules\express\package.json
+9 verbose installManyTop reading scoped package data from F:\workspaceforweb\node\wechatn\node_modules\express-session\package.json
+10 verbose installManyTop reading scoped package data from F:\workspaceforweb\node\wechatn\node_modules\jade\package.json
+11 verbose installManyTop reading scoped package data from F:\workspaceforweb\node\wechatn\node_modules\moment\package.json
+12 verbose installManyTop reading scoped package data from F:\workspaceforweb\node\wechatn\node_modules\mongoose\package.json
+13 verbose installManyTop reading scoped package data from F:\workspaceforweb\node\wechatn\node_modules\morgan\package.json
+14 verbose installManyTop reading scoped package data from F:\workspaceforweb\node\wechatn\node_modules\serve-static\package.json
+15 verbose installManyTop reading scoped package data from F:\workspaceforweb\node\wechatn\node_modules\sha1\package.json
+16 verbose installManyTop reading scoped package data from F:\workspaceforweb\node\wechatn\node_modules\underscore\package.json
+17 verbose installManyTop reading scoped package data from F:\workspaceforweb\node\wechatn\node_modules\wechat\package.json
+18 verbose installManyTop reading scoped package data from F:\workspaceforweb\node\wechatn\node_modules\xml2js\package.json
+19 info package.json connect-mongo@0.8.2 No license field.
+20 info package.json sha1@1.0.1 No license field.
+21 info package.json mongoose@3.8.35 No license field.
+22 verbose readDependencies loading dependencies from F:\workspaceforweb\node\wechatn\package.json
+23 silly cache add args [ 'wechat-api', null ]
+24 verbose cache add spec wechat-api
+25 silly cache add parsed spec { raw: 'wechat-api',
+25 silly cache add   scope: null,
+25 silly cache add   name: 'wechat-api',
+25 silly cache add   rawSpec: '',
+25 silly cache add   spec: '*',
+25 silly cache add   type: 'range' }
+26 silly addNamed wechat-api@*
+27 verbose addNamed "*" is a valid semver range for wechat-api
+28 silly addNameRange { name: 'wechat-api', range: '*', hasData: false }
+29 silly mapToRegistry name wechat-api
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry http://registry.cnpmjs.org/
+32 silly mapToRegistry uri http://registry.cnpmjs.org/wechat-api
+33 verbose addNameRange registry:http://registry.cnpmjs.org/wechat-api not in flight; fetching
+34 verbose request uri http://registry.cnpmjs.org/wechat-api
+35 verbose request no auth needed
+36 info attempt registry request try #1 at 20:32:38
+37 verbose request id d04b330bfe07e7c5
+38 http request GET http://registry.cnpmjs.org/wechat-api
+39 http 200 http://registry.cnpmjs.org/wechat-api
+40 silly get cb [ 200,
+40 silly get   { server: 'nginx/1.4.6 (Ubuntu)',
+40 silly get     date: 'Fri, 21 Aug 2015 12:32:32 GMT',
+40 silly get     'content-type': 'application/json; charset=utf-8',
+40 silly get     'transfer-encoding': 'chunked',
+40 silly get     connection: 'keep-alive',
+40 silly get     'x-readtime': '22',
+40 silly get     'content-encoding': 'gzip' } ]
+41 verbose get saving wechat-api to C:\Users\iibm\AppData\Roaming\npm-cache\registry.cnpmjs.org\wechat-api\.cache.json
+42 silly addNameRange number 2 { name: 'wechat-api', range: '*', hasData: true }
+43 silly addNameRange versions [ 'wechat-api',
+43 silly addNameRange   [ '1.11.0',
+43 silly addNameRange     '1.10.0',
+43 silly addNameRange     '1.9.4',
+43 silly addNameRange     '1.9.3',
+43 silly addNameRange     '1.9.2',
+43 silly addNameRange     '1.9.1',
+43 silly addNameRange     '1.9.0',
+43 silly addNameRange     '1.8.6',
+43 silly addNameRange     '1.8.5',
+43 silly addNameRange     '1.8.4',
+43 silly addNameRange     '1.8.3',
+43 silly addNameRange     '1.8.2',
+43 silly addNameRange     '1.8.1',
+43 silly addNameRange     '1.8.0',
+43 silly addNameRange     '1.7.1',
+43 silly addNameRange     '1.7.0',
+43 silly addNameRange     '1.6.0',
+43 silly addNameRange     '1.5.2',
+43 silly addNameRange     '1.5.1',
+43 silly addNameRange     '1.5.0',
+43 silly addNameRange     '1.4.1',
+43 silly addNameRange     '1.4.0',
+43 silly addNameRange     '1.3.0',
+43 silly addNameRange     '1.2.2',
+43 silly addNameRange     '1.1.2',
+43 silly addNameRange     '1.1.1',
+43 silly addNameRange     '1.0.1',
+43 silly addNameRange     '1.0.0',
+43 silly addNameRange     '0.0.5',
+43 silly addNameRange     '0.0.4',
+43 silly addNameRange     '0.0.3',
+43 silly addNameRange     '0.0.1' ] ]
+44 silly addNamed wechat-api@1.11.0
+45 verbose addNamed "1.11.0" is a plain semver version for wechat-api
+46 silly mapToRegistry name wechat-api
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry http://registry.cnpmjs.org/
+49 silly mapToRegistry uri http://registry.cnpmjs.org/wechat-api
+50 verbose addRemoteTarball http://registry.cnpmjs.org/wechat-api/download/wechat-api-1.11.0.tgz not in flight; adding
+51 verbose addRemoteTarball [ 'http://registry.cnpmjs.org/wechat-api/download/wechat-api-1.11.0.tgz',
+51 verbose addRemoteTarball   'f4dae4ba2c7daaf9c827004b8a8dfdb16e54184e' ]
+52 info retry fetch attempt 1 at 20:33:00
+53 info attempt registry request try #1 at 20:33:00
+54 http fetch GET http://registry.cnpmjs.org/wechat-api/download/wechat-api-1.11.0.tgz
+55 http fetch 200 http://registry.cnpmjs.org/wechat-api/download/wechat-api-1.11.0.tgz
+56 silly fetchAndShaCheck shasum f4dae4ba2c7daaf9c827004b8a8dfdb16e54184e
+57 verbose addTmpTarball C:\Users\iibm\AppData\Local\Temp\npm-154228-5aaf040e\registry.cnpmjs.org\wechat-api\download\wechat-api-1.11.0.tgz not in flight; adding
+58 verbose addTmpTarball already have metadata; skipping unpack for wechat-api@1.11.0
+59 silly cache afterAdd wechat-api@1.11.0
+60 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\wechat-api\1.11.0\package\package.json not in flight; writing
+61 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\wechat-api\1.11.0\package\package.json written
+62 silly install resolved [ { name: 'wechat-api',
+62 silly install resolved     version: '1.11.0',
+62 silly install resolved     description: '微信公共平台Node库 API',
+62 silly install resolved     main: 'index.js',
+62 silly install resolved     scripts: { test: 'make test-all' },
+62 silly install resolved     config: { 'travis-cov': [Object] },
+62 silly install resolved     repository:
+62 silly install resolved      { type: 'git',
+62 silly install resolved        url: 'git://github.com/node-webot/wechat-api.git' },
+62 silly install resolved     keywords: [ 'weixin', 'wechat' ],
+62 silly install resolved     dependencies: { formstream: '>=0.0.8', urllib: '2.0.2' },
+62 silly install resolved     devDependencies:
+62 silly install resolved      { mocha: '*',
+62 silly install resolved        'expect.js': '*',
+62 silly install resolved        'travis-cov': '*',
+62 silly install resolved        coveralls: '*',
+62 silly install resolved        'mocha-lcov-reporter': '*',
+62 silly install resolved        muk: '*',
+62 silly install resolved        rewire: '*',
+62 silly install resolved        istanbul: '*' },
+62 silly install resolved     author: { name: 'Jackson Tian' },
+62 silly install resolved     license: 'MIT',
+62 silly install resolved     directories: { test: 'test' },
+62 silly install resolved     gitHead: '66b30535867101dcaeb1acef6786edea7832e482',
+62 silly install resolved     bugs: { url: 'https://github.com/node-webot/wechat-api/issues' },
+62 silly install resolved     homepage: 'https://github.com/node-webot/wechat-api#readme',
+62 silly install resolved     _id: 'wechat-api@1.11.0',
+62 silly install resolved     _shasum: 'f4dae4ba2c7daaf9c827004b8a8dfdb16e54184e',
+62 silly install resolved     _from: 'wechat-api@*',
+62 silly install resolved     _npmVersion: '2.11.2',
+62 silly install resolved     _nodeVersion: '0.12.6',
+62 silly install resolved     _npmUser: { name: 'jacksontian', email: 'shyvo1987@gmail.com' },
+62 silly install resolved     maintainers: [ [Object], [Object] ],
+62 silly install resolved     dist:
+62 silly install resolved      { shasum: 'f4dae4ba2c7daaf9c827004b8a8dfdb16e54184e',
+62 silly install resolved        size: 2731493,
+62 silly install resolved        noattachment: false,
+62 silly install resolved        tarball: 'http://registry.cnpmjs.org/wechat-api/download/wechat-api-1.11.0.tgz' },
+62 silly install resolved     publish_time: 1439968467569,
+62 silly install resolved     _cnpm_publish_time: 1439968467569,
+62 silly install resolved     _resolved: 'http://registry.cnpmjs.org/wechat-api/download/wechat-api-1.11.0.tgz' } ]
+63 info install wechat-api@1.11.0 into F:\workspaceforweb\node\wechatn
+64 info installOne wechat-api@1.11.0
+65 verbose installOne of wechat-api to F:\workspaceforweb\node\wechatn not in flight; installing
+66 verbose lock using C:\Users\iibm\AppData\Roaming\npm-cache\_locks\wechat-api-bac1bddc980b4aa6.lock for F:\workspaceforweb\node\wechatn\node_modules\wechat-api
+67 silly install write writing wechat-api 1.11.0 to F:\workspaceforweb\node\wechatn\node_modules\wechat-api
+68 verbose unbuild node_modules\wechat-api
+69 silly gentlyRm F:\workspaceforweb\node\wechatn\node_modules\wechat-api is being purged from base F:\workspaceforweb\node\wechatn
+70 verbose gentlyRm don't care about contents; nuking F:\workspaceforweb\node\wechatn\node_modules\wechat-api
+71 verbose tar unpack C:\Users\iibm\AppData\Roaming\npm-cache\wechat-api\1.11.0\package.tgz
+72 verbose tar unpacking to F:\workspaceforweb\node\wechatn\node_modules\wechat-api
+73 silly gentlyRm F:\workspaceforweb\node\wechatn\node_modules\wechat-api is being purged
+74 verbose gentlyRm don't care about contents; nuking F:\workspaceforweb\node\wechatn\node_modules\wechat-api
+75 silly gunzTarPerm modes [ '777', '666' ]
+76 silly gunzTarPerm extractEntry package.json
+77 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+78 silly gunzTarPerm extractEntry .npmignore
+79 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+80 silly gunzTarPerm extractEntry README.md
+81 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+82 silly gunzTarPerm extractEntry index.js
+83 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+84 silly gunzTarPerm extractEntry Makefile
+85 silly gunzTarPerm modified mode [ 'Makefile', 420, 438 ]
+86 silly gunzTarPerm extractEntry .jshintrc
+87 silly gunzTarPerm modified mode [ '.jshintrc', 420, 438 ]
+88 silly gunzTarPerm extractEntry figures/api.graffle
+89 silly gunzTarPerm modified mode [ 'figures/api.graffle', 420, 438 ]
+90 silly gunzTarPerm extractEntry figures/wechat.graffle
+91 silly gunzTarPerm modified mode [ 'figures/wechat.graffle', 420, 438 ]
+92 silly gunzTarPerm extractEntry figures/wechat.png
+93 silly gunzTarPerm modified mode [ 'figures/wechat.png', 420, 438 ]
+94 silly gunzTarPerm extractEntry .travis.yml
+95 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+96 silly gunzTarPerm extractEntry lib/api_card.js
+97 silly gunzTarPerm modified mode [ 'lib/api_card.js', 420, 438 ]
+98 silly gunzTarPerm extractEntry lib/api_media.js
+99 silly gunzTarPerm modified mode [ 'lib/api_media.js', 420, 438 ]
+100 silly gunzTarPerm extractEntry lib/api_menu.js
+101 silly gunzTarPerm modified mode [ 'lib/api_menu.js', 420, 438 ]
+102 silly gunzTarPerm extractEntry lib/api_message.js
+103 silly gunzTarPerm modified mode [ 'lib/api_message.js', 420, 438 ]
+104 silly gunzTarPerm extractEntry lib/api_payment.js
+105 silly gunzTarPerm modified mode [ 'lib/api_payment.js', 420, 438 ]
+106 silly gunzTarPerm extractEntry lib/api_material.js
+107 silly gunzTarPerm modified mode [ 'lib/api_material.js', 420, 438 ]
+108 silly gunzTarPerm extractEntry lib/api_qrcode.js
+109 silly gunzTarPerm modified mode [ 'lib/api_qrcode.js', 420, 438 ]
+110 silly gunzTarPerm extractEntry lib/api_semantic.js
+111 silly gunzTarPerm modified mode [ 'lib/api_semantic.js', 420, 438 ]
+112 silly gunzTarPerm extractEntry lib/api_shakearound.js
+113 silly gunzTarPerm modified mode [ 'lib/api_shakearound.js', 420, 438 ]
+114 silly gunzTarPerm extractEntry lib/api_shop_common.js
+115 silly gunzTarPerm modified mode [ 'lib/api_shop_common.js', 420, 438 ]
+116 silly gunzTarPerm extractEntry lib/api_shop_express.js
+117 silly gunzTarPerm modified mode [ 'lib/api_shop_express.js', 420, 438 ]
+118 silly gunzTarPerm extractEntry lib/api_mass_send.js
+119 silly gunzTarPerm modified mode [ 'lib/api_mass_send.js', 420, 438 ]
+120 silly gunzTarPerm extractEntry lib/api_shop_goods.js
+121 silly gunzTarPerm modified mode [ 'lib/api_shop_goods.js', 420, 438 ]
+122 silly gunzTarPerm extractEntry lib/api_js.js
+123 silly gunzTarPerm modified mode [ 'lib/api_js.js', 420, 438 ]
+124 silly gunzTarPerm extractEntry lib/api_shop_group.js
+125 silly gunzTarPerm modified mode [ 'lib/api_shop_group.js', 420, 438 ]
+126 silly gunzTarPerm extractEntry lib/api_ip.js
+127 silly gunzTarPerm modified mode [ 'lib/api_ip.js', 420, 438 ]
+128 silly gunzTarPerm extractEntry lib/api_shop_order.js
+129 silly gunzTarPerm modified mode [ 'lib/api_shop_order.js', 420, 438 ]
+130 silly gunzTarPerm extractEntry lib/api_group.js
+131 silly gunzTarPerm modified mode [ 'lib/api_group.js', 420, 438 ]
+132 silly gunzTarPerm extractEntry lib/api_shop_shelf.js
+133 silly gunzTarPerm modified mode [ 'lib/api_shop_shelf.js', 420, 438 ]
+134 silly gunzTarPerm extractEntry lib/api_feedback.js
+135 silly gunzTarPerm modified mode [ 'lib/api_feedback.js', 420, 438 ]
+136 silly gunzTarPerm extractEntry lib/api_shop_stock.js
+137 silly gunzTarPerm modified mode [ 'lib/api_shop_stock.js', 420, 438 ]
+138 silly gunzTarPerm extractEntry lib/api_device.js
+139 silly gunzTarPerm modified mode [ 'lib/api_device.js', 420, 438 ]
+140 silly gunzTarPerm extractEntry lib/api_template.js
+141 silly gunzTarPerm modified mode [ 'lib/api_template.js', 420, 438 ]
+142 silly gunzTarPerm extractEntry lib/api_datacube.js
+143 silly gunzTarPerm modified mode [ 'lib/api_datacube.js', 420, 438 ]
+144 silly gunzTarPerm extractEntry lib/api_url.js
+145 silly gunzTarPerm modified mode [ 'lib/api_url.js', 420, 438 ]
+146 silly gunzTarPerm extractEntry lib/api_custom_service.js
+147 silly gunzTarPerm modified mode [ 'lib/api_custom_service.js', 420, 438 ]
+148 silly gunzTarPerm extractEntry lib/api_user.js
+149 silly gunzTarPerm modified mode [ 'lib/api_user.js', 420, 438 ]
+150 silly gunzTarPerm extractEntry lib/api_common.js
+151 silly gunzTarPerm modified mode [ 'lib/api_common.js', 420, 438 ]
+152 silly gunzTarPerm extractEntry lib/util.js
+153 silly gunzTarPerm modified mode [ 'lib/util.js', 420, 438 ]
+154 silly gunzTarPerm extractEntry lib/api_poi.js
+155 silly gunzTarPerm modified mode [ 'lib/api_poi.js', 420, 438 ]
+156 silly gunzTarPerm extractEntry MIT-License
+157 silly gunzTarPerm modified mode [ 'MIT-License', 493, 511 ]
+158 silly gunzTarPerm extractEntry test/api_common.test.js
+159 silly gunzTarPerm modified mode [ 'test/api_common.test.js', 420, 438 ]
+160 silly gunzTarPerm extractEntry test/api_menu.test.js
+161 silly gunzTarPerm modified mode [ 'test/api_menu.test.js', 420, 438 ]
+162 silly gunzTarPerm extractEntry test/api_payment.test.js
+163 silly gunzTarPerm modified mode [ 'test/api_payment.test.js', 420, 438 ]
+164 silly gunzTarPerm extractEntry test/api_qrcode.test.js
+165 silly gunzTarPerm modified mode [ 'test/api_qrcode.test.js', 420, 438 ]
+166 silly gunzTarPerm extractEntry test/api_semantic.test.js
+167 silly gunzTarPerm modified mode [ 'test/api_semantic.test.js', 420, 438 ]
+168 silly gunzTarPerm extractEntry test/api_media.test.js
+169 silly gunzTarPerm modified mode [ 'test/api_media.test.js', 420, 438 ]
+170 silly gunzTarPerm extractEntry test/api_shop_express.test.js
+171 silly gunzTarPerm modified mode [ 'test/api_shop_express.test.js', 420, 438 ]
+172 silly gunzTarPerm extractEntry test/api_shop_goods.test.js
+173 silly gunzTarPerm modified mode [ 'test/api_shop_goods.test.js', 420, 438 ]
+174 silly gunzTarPerm extractEntry test/api_shop_group.test.js
+175 silly gunzTarPerm modified mode [ 'test/api_shop_group.test.js', 420, 438 ]
+176 silly gunzTarPerm extractEntry test/api_shop_order.test.js
+177 silly gunzTarPerm modified mode [ 'test/api_shop_order.test.js', 420, 438 ]
+178 silly gunzTarPerm extractEntry test/api_shop_shelf.test.js
+179 silly gunzTarPerm modified mode [ 'test/api_shop_shelf.test.js', 420, 438 ]
+180 silly gunzTarPerm extractEntry test/api_mass_send.test.js
+181 silly gunzTarPerm modified mode [ 'test/api_mass_send.test.js', 420, 438 ]
+182 silly gunzTarPerm extractEntry test/api_shop_stock.test.js
+183 silly gunzTarPerm modified mode [ 'test/api_shop_stock.test.js', 420, 438 ]
+184 silly gunzTarPerm extractEntry test/api_ip.test.js
+185 silly gunzTarPerm modified mode [ 'test/api_ip.test.js', 420, 438 ]
+186 silly gunzTarPerm extractEntry test/api_template.test.js
+187 silly gunzTarPerm modified mode [ 'test/api_template.test.js', 420, 438 ]
+188 silly gunzTarPerm extractEntry test/api_group.test.js
+189 silly gunzTarPerm modified mode [ 'test/api_group.test.js', 420, 438 ]
+190 silly gunzTarPerm extractEntry test/api_url.test.js
+191 silly gunzTarPerm modified mode [ 'test/api_url.test.js', 420, 438 ]
+192 silly gunzTarPerm extractEntry test/api_feedback.test.js
+193 silly gunzTarPerm modified mode [ 'test/api_feedback.test.js', 420, 438 ]
+194 silly gunzTarPerm extractEntry test/api_user.test.js
+195 silly gunzTarPerm modified mode [ 'test/api_user.test.js', 420, 438 ]
+196 silly gunzTarPerm extractEntry test/api_customer.test.js
+197 silly gunzTarPerm modified mode [ 'test/api_customer.test.js', 420, 438 ]
+198 silly gunzTarPerm extractEntry test/config.js
+199 silly gunzTarPerm modified mode [ 'test/config.js', 420, 438 ]
+200 silly gunzTarPerm extractEntry test/api_custom_service.test.js
+201 silly gunzTarPerm modified mode [ 'test/api_custom_service.test.js', 420, 438 ]
+202 silly gunzTarPerm extractEntry test/api_shop_common.test.js
+203 silly gunzTarPerm modified mode [ 'test/api_shop_common.test.js', 420, 438 ]
+204 silly gunzTarPerm extractEntry test/fixture/image.jpg
+205 silly gunzTarPerm modified mode [ 'test/fixture/image.jpg', 420, 438 ]
+206 silly gunzTarPerm extractEntry test/fixture/menu.json
+207 silly gunzTarPerm modified mode [ 'test/fixture/menu.json', 420, 438 ]
+208 silly gunzTarPerm extractEntry test/fixture/movie.mp4
+209 silly gunzTarPerm modified mode [ 'test/fixture/movie.mp4', 420, 438 ]
+210 silly gunzTarPerm extractEntry test/fixture/pic.jpg
+211 silly gunzTarPerm modified mode [ 'test/fixture/pic.jpg', 420, 438 ]
+212 silly gunzTarPerm extractEntry test/fixture/test.mp3
+213 silly gunzTarPerm modified mode [ 'test/fixture/test.mp3', 420, 438 ]
+214 verbose write writing to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\package.json
+215 info preinstall wechat-api@1.11.0
+216 verbose readDependencies loading dependencies from F:\workspaceforweb\node\wechatn\node_modules\wechat-api\package.json
+217 silly prepareForInstallMany adding formstream@>=0.0.8 from wechat-api dependencies
+218 silly prepareForInstallMany adding urllib@2.0.2 from wechat-api dependencies
+219 verbose readDependencies loading dependencies from F:\workspaceforweb\node\wechatn\node_modules\wechat-api\package.json
+220 silly cache add args [ 'formstream@>=0.0.8', null ]
+221 verbose cache add spec formstream@>=0.0.8
+222 silly cache add args [ 'urllib@2.0.2', null ]
+223 verbose cache add spec urllib@2.0.2
+224 silly cache add parsed spec { raw: 'formstream@>=0.0.8',
+224 silly cache add   scope: null,
+224 silly cache add   name: 'formstream',
+224 silly cache add   rawSpec: '>=0.0.8',
+224 silly cache add   spec: '>=0.0.8',
+224 silly cache add   type: 'range' }
+225 silly addNamed formstream@>=0.0.8
+226 verbose addNamed ">=0.0.8" is a valid semver range for formstream
+227 silly addNameRange { name: 'formstream', range: '>=0.0.8', hasData: false }
+228 silly mapToRegistry name formstream
+229 silly mapToRegistry using default registry
+230 silly mapToRegistry registry http://registry.cnpmjs.org/
+231 silly mapToRegistry uri http://registry.cnpmjs.org/formstream
+232 verbose addNameRange registry:http://registry.cnpmjs.org/formstream not in flight; fetching
+233 silly cache add parsed spec { raw: 'urllib@2.0.2',
+233 silly cache add   scope: null,
+233 silly cache add   name: 'urllib',
+233 silly cache add   rawSpec: '2.0.2',
+233 silly cache add   spec: '2.0.2',
+233 silly cache add   type: 'version' }
+234 silly addNamed urllib@2.0.2
+235 verbose addNamed "2.0.2" is a plain semver version for urllib
+236 silly mapToRegistry name urllib
+237 silly mapToRegistry using default registry
+238 silly mapToRegistry registry http://registry.cnpmjs.org/
+239 silly mapToRegistry uri http://registry.cnpmjs.org/urllib
+240 verbose addNameVersion registry:http://registry.cnpmjs.org/urllib not in flight; fetching
+241 verbose request uri http://registry.cnpmjs.org/formstream
+242 verbose request no auth needed
+243 info attempt registry request try #1 at 20:33:10
+244 http request GET http://registry.cnpmjs.org/formstream
+245 verbose request uri http://registry.cnpmjs.org/urllib
+246 verbose request no auth needed
+247 info attempt registry request try #1 at 20:33:10
+248 http request GET http://registry.cnpmjs.org/urllib
+249 http 200 http://registry.cnpmjs.org/formstream
+250 silly get cb [ 200,
+250 silly get   { server: 'nginx/1.4.6 (Ubuntu)',
+250 silly get     date: 'Fri, 21 Aug 2015 12:33:03 GMT',
+250 silly get     'content-type': 'application/json; charset=utf-8',
+250 silly get     'transfer-encoding': 'chunked',
+250 silly get     connection: 'keep-alive',
+250 silly get     'x-readtime': '15',
+250 silly get     'content-encoding': 'gzip' } ]
+251 verbose get saving formstream to C:\Users\iibm\AppData\Roaming\npm-cache\registry.cnpmjs.org\formstream\.cache.json
+252 silly addNameRange number 2 { name: 'formstream', range: '>=0.0.8', hasData: true }
+253 silly addNameRange versions [ 'formstream',
+253 silly addNameRange   [ '1.0.0',
+253 silly addNameRange     '0.0.8',
+253 silly addNameRange     '0.0.7',
+253 silly addNameRange     '0.0.6',
+253 silly addNameRange     '0.0.5',
+253 silly addNameRange     '0.0.4',
+253 silly addNameRange     '0.0.3',
+253 silly addNameRange     '0.0.2',
+253 silly addNameRange     '0.0.1' ] ]
+254 silly addNamed formstream@1.0.0
+255 verbose addNamed "1.0.0" is a plain semver version for formstream
+256 silly mapToRegistry name formstream
+257 silly mapToRegistry using default registry
+258 silly mapToRegistry registry http://registry.cnpmjs.org/
+259 silly mapToRegistry uri http://registry.cnpmjs.org/formstream
+260 verbose addRemoteTarball http://registry.cnpmjs.org/formstream/download/formstream-1.0.0.tgz not in flight; adding
+261 verbose addRemoteTarball [ 'http://registry.cnpmjs.org/formstream/download/formstream-1.0.0.tgz',
+261 verbose addRemoteTarball   'c085840644083056dcc0a4c2df863ee6aed4b6a8' ]
+262 info retry fetch attempt 1 at 20:33:11
+263 info attempt registry request try #1 at 20:33:11
+264 http fetch GET http://registry.cnpmjs.org/formstream/download/formstream-1.0.0.tgz
+265 http fetch 200 http://registry.cnpmjs.org/formstream/download/formstream-1.0.0.tgz
+266 silly fetchAndShaCheck shasum c085840644083056dcc0a4c2df863ee6aed4b6a8
+267 verbose addTmpTarball C:\Users\iibm\AppData\Local\Temp\npm-154228-5aaf040e\registry.cnpmjs.org\formstream\download\formstream-1.0.0.tgz not in flight; adding
+268 verbose addTmpTarball already have metadata; skipping unpack for formstream@1.0.0
+269 silly cache afterAdd formstream@1.0.0
+270 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\formstream\1.0.0\package\package.json not in flight; writing
+271 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\formstream\1.0.0\package\package.json written
+272 http 200 http://registry.cnpmjs.org/urllib
+273 silly get cb [ 200,
+273 silly get   { server: 'nginx/1.4.6 (Ubuntu)',
+273 silly get     date: 'Fri, 21 Aug 2015 12:33:04 GMT',
+273 silly get     'content-type': 'application/json; charset=utf-8',
+273 silly get     'transfer-encoding': 'chunked',
+273 silly get     connection: 'keep-alive',
+273 silly get     'x-readtime': '92',
+273 silly get     'content-encoding': 'gzip' } ]
+274 verbose get saving urllib to C:\Users\iibm\AppData\Roaming\npm-cache\registry.cnpmjs.org\urllib\.cache.json
+275 silly mapToRegistry name urllib
+276 silly mapToRegistry using default registry
+277 silly mapToRegistry registry http://registry.cnpmjs.org/
+278 silly mapToRegistry uri http://registry.cnpmjs.org/urllib
+279 verbose addRemoteTarball http://registry.cnpmjs.org/urllib/download/urllib-2.0.2.tgz not in flight; adding
+280 verbose addRemoteTarball [ 'http://registry.cnpmjs.org/urllib/download/urllib-2.0.2.tgz',
+280 verbose addRemoteTarball   'd28b88c6de3af44621881e847a1c449ee5fbf25c' ]
+281 info retry fetch attempt 1 at 20:33:15
+282 info attempt registry request try #1 at 20:33:15
+283 http fetch GET http://registry.cnpmjs.org/urllib/download/urllib-2.0.2.tgz
+284 http fetch 200 http://registry.cnpmjs.org/urllib/download/urllib-2.0.2.tgz
+285 silly fetchAndShaCheck shasum d28b88c6de3af44621881e847a1c449ee5fbf25c
+286 verbose addTmpTarball C:\Users\iibm\AppData\Local\Temp\npm-154228-5aaf040e\registry.cnpmjs.org\urllib\download\urllib-2.0.2.tgz not in flight; adding
+287 verbose addTmpTarball already have metadata; skipping unpack for urllib@2.0.2
+288 silly cache afterAdd urllib@2.0.2
+289 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\urllib\2.0.2\package\package.json not in flight; writing
+290 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\urllib\2.0.2\package\package.json written
+291 silly install resolved [ { name: 'formstream',
+291 silly install resolved     version: '1.0.0',
+291 silly install resolved     description: 'A multipart/form-data encoded stream, helper for file upload.',
+291 silly install resolved     main: 'index.js',
+291 silly install resolved     scripts:
+291 silly install resolved      { test: 'mocha --check-leaks -R spec -t 5000 -r should test/*.test.js',
+291 silly install resolved        'test-cov': 'node --harmony node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- --check-leaks -t 5000 -r should test/*.test.js',
+291 silly install resolved        'test-travis': 'node --harmony node_modules/.bin/istanbul cover node_modules/.bin/_mocha --report lcovonly -- --check-leaks -t 5000 -r should test/*.test.js',
+291 silly install resolved        jshint: 'jshint .',
+291 silly install resolved        autod: 'autod -w --prefix \'~\'',
+291 silly install resolved        cnpm: 'npm install --registry=https://registry.npm.taobao.org',
+291 silly install resolved        contributors: 'contributors -f plain -o AUTHORS' },
+291 silly install resolved     repository:
+291 silly install resolved      { type: 'git',
+291 silly install resolved        url: 'git://github.com/node-modules/formstream.git' },
+291 silly install resolved     keywords:
+291 silly install resolved      [ 'form',
+291 silly install resolved        'stream',
+291 silly install resolved        'multipart',
+291 silly install resolved        'form-data',
+291 silly install resolved        'upload',
+291 silly install resolved        'postfile',
+291 silly install resolved        'request' ],
+291 silly install resolved     dependencies:
+291 silly install resolved      { 'buffer-concat': '~0.0.1',
+291 silly install resolved        destroy: '~1.0.3',
+291 silly install resolved        mime: '~1.2.11',
+291 silly install resolved        'pause-stream': '~0.0.11' },
+291 silly install resolved     devDependencies:
+291 silly install resolved      { autod: '*',
+291 silly install resolved        blanket: '*',
+291 silly install resolved        'connect-multiparty': '~1.2.5',
+291 silly install resolved        contributors: '*',
+291 silly install resolved        express: '~4.10.1',
+291 silly install resolved        'istanbul-harmony': '*',
+291 silly install resolved        mocha: '*',
+291 silly install resolved        pedding: '~1.0.0',
+291 silly install resolved        should: '~4.1.0',
+291 silly install resolved        urllib: '~2.0.2' },
+291 silly install resolved     author:
+291 silly install resolved      { name: 'fengmk2',
+291 silly install resolved        email: 'fengmk2@gmail.com',
+291 silly install resolved        url: 'http://fengmk2.github.com' },
+291 silly install resolved     license: 'MIT',
+291 silly install resolved     contributors: [ [Object], [Object] ],
+291 silly install resolved     gitHead: '849fa3f1ae5a44dea2558d649feefc56c7ee73f4',
+291 silly install resolved     bugs: { url: 'https://github.com/node-modules/formstream/issues' },
+291 silly install resolved     homepage: 'https://github.com/node-modules/formstream',
+291 silly install resolved     _id: 'formstream@1.0.0',
+291 silly install resolved     _shasum: 'c085840644083056dcc0a4c2df863ee6aed4b6a8',
+291 silly install resolved     _from: 'formstream@>=0.0.8',
+291 silly install resolved     _npmVersion: '2.0.0',
+291 silly install resolved     _npmUser: { name: 'fengmk2', email: 'fengmk2@gmail.com' },
+291 silly install resolved     maintainers: [ [Object] ],
+291 silly install resolved     dist:
+291 silly install resolved      { shasum: 'c085840644083056dcc0a4c2df863ee6aed4b6a8',
+291 silly install resolved        size: 7990,
+291 silly install resolved        noattachment: false,
+291 silly install resolved        tarball: 'http://registry.cnpmjs.org/formstream/download/formstream-1.0.0.tgz' },
+291 silly install resolved     directories: {},
+291 silly install resolved     publish_time: 1415071538696,
+291 silly install resolved     _cnpm_publish_time: 1415071538696,
+291 silly install resolved     _resolved: 'http://registry.cnpmjs.org/formstream/download/formstream-1.0.0.tgz' },
+291 silly install resolved   { name: 'urllib',
+291 silly install resolved     version: '2.0.2',
+291 silly install resolved     description: 'Help in opening URLs (mostly HTTP) in a complex world — basic and digest authentication, redirections, cookies and more.',
+291 silly install resolved     keywords: [ 'urllib', 'http', 'urlopen', 'curl', 'wget', 'request', 'https' ],
+291 silly install resolved     author:
+291 silly install resolved      { name: 'fengmk2',
+291 silly install resolved        email: 'fengmk2@gmail.com',
+291 silly install resolved        url: 'http://fengmk2.github.com' },
+291 silly install resolved     homepage: 'http://github.com/node-modules/urllib',
+291 silly install resolved     main: 'index.js',
+291 silly install resolved     repository: { type: 'git', url: 'git://github.com/node-modules/urllib.git' },
+291 silly install resolved     scripts:
+291 silly install resolved      { test: 'mocha -R spec -t 20000 -r should -r should-http test/*.test.js',
+291 silly install resolved        'test-cov': 'node --harmony node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- -t 20000 -r should -r should-http test/*.test.js',
+291 silly install resolved        'test-travis': 'node --harmony node_modules/.bin/istanbul cover node_modules/.bin/_mocha --report lcovonly -- -t 20000 -r should -r should-http test/*.test.js',
+291 silly install resolved        jshint: 'jshint .',
+291 silly install resolved        autod: 'autod -w --prefix \'~\' -t test -e examples',
+291 silly install resolved        cnpm: 'npm install --registry=https://registry.npm.taobao.org',
+291 silly install resolved        contributors: 'contributors -f plain -o AUTHORS' },
+291 silly install resolved     dependencies:
+291 silly install resolved      { debug: '~2.1.0',
+291 silly install resolved        'default-user-agent': '~0.0.1',
+291 silly install resolved        'digest-header': '~0.0.1',
+291 silly install resolved        'iconv-lite': '~0.4.4',
+291 silly install resolved        'media-typer': '~0.3.0',
+291 silly install resolved        'native-or-bluebird': '~1.1.2' },
+291 silly install resolved     devDependencies:
+291 silly install resolved      { agentkeepalive: '~1.2.0',
+291 silly install resolved        autod: '*',
+291 silly install resolved        bluebird: '*',
+291 silly install resolved        co: '*',
+291 silly install resolved        contributors: '*',
+291 silly install resolved        formstream: '~0.0.8',
+291 silly install resolved        istanbul: '*',
+291 silly install resolved        jshint: '*',
+291 silly install resolved        mocha: '*',
+291 silly install resolved        pedding: '*',
+291 silly install resolved        should: '~4.0.4',
+291 silly install resolved        'should-http': '*' },
+291 silly install resolved     engines: { node: '>= 0.10.0' },
+291 silly install resolved     license: 'MIT',
+291 silly install resolved     contributors:
+291 silly install resolved      [ [Object],
+291 silly install resolved        [Object],
+291 silly install resolved        [Object],
+291 silly install resolved        [Object],
+291 silly install resolved        [Object],
+291 silly install resolved        [Object],
+291 silly install resolved        [Object],
+291 silly install resolved        [Object],
+291 silly install resolved        [Object],
+291 silly install resolved        [Object] ],
+291 silly install resolved     gitHead: 'ece354667315fcd096982cb9354234a4df7ad378',
+291 silly install resolved     bugs: { url: 'https://github.com/node-modules/urllib/issues' },
+291 silly install resolved     _id: 'urllib@2.0.2',
+291 silly install resolved     _shasum: 'd28b88c6de3af44621881e847a1c449ee5fbf25c',
+291 silly install resolved     _from: 'urllib@2.0.2',
+291 silly install resolved     _npmVersion: '2.0.0',
+291 silly install resolved     _npmUser: { name: 'fengmk2', email: 'fengmk2@gmail.com' },
+291 silly install resolved     maintainers: [ [Object], [Object] ],
+291 silly install resolved     dist:
+291 silly install resolved      { shasum: 'd28b88c6de3af44621881e847a1c449ee5fbf25c',
+291 silly install resolved        size: 12953,
+291 silly install resolved        noattachment: false,
+291 silly install resolved        tarball: 'http://registry.cnpmjs.org/urllib/download/urllib-2.0.2.tgz' },
+291 silly install resolved     directories: {},
+291 silly install resolved     publish_time: 1414773756071,
+291 silly install resolved     _cnpm_publish_time: 1414773756071,
+291 silly install resolved     _resolved: 'http://registry.cnpmjs.org/urllib/download/urllib-2.0.2.tgz' } ]
+292 info install formstream@1.0.0 into F:\workspaceforweb\node\wechatn\node_modules\wechat-api
+293 info install urllib@2.0.2 into F:\workspaceforweb\node\wechatn\node_modules\wechat-api
+294 info installOne formstream@1.0.0
+295 verbose installOne of formstream to F:\workspaceforweb\node\wechatn\node_modules\wechat-api not in flight; installing
+296 info installOne urllib@2.0.2
+297 verbose installOne of urllib to F:\workspaceforweb\node\wechatn\node_modules\wechat-api not in flight; installing
+298 verbose lock using C:\Users\iibm\AppData\Roaming\npm-cache\_locks\formstream-bae795e02c0dd4fd.lock for F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\formstream
+299 silly install write writing formstream 1.0.0 to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\formstream
+300 verbose lock using C:\Users\iibm\AppData\Roaming\npm-cache\_locks\urllib-ee83cf1ae920c7a6.lock for F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib
+301 silly install write writing urllib 2.0.2 to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib
+302 verbose unbuild node_modules\wechat-api\node_modules\formstream
+303 verbose unbuild node_modules\wechat-api\node_modules\urllib
+304 silly gentlyRm F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\formstream is being purged from base F:\workspaceforweb\node\wechatn
+305 verbose gentlyRm don't care about contents; nuking F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\formstream
+306 verbose tar unpack C:\Users\iibm\AppData\Roaming\npm-cache\formstream\1.0.0\package.tgz
+307 verbose tar unpacking to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\formstream
+308 silly gentlyRm F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\formstream is being purged
+309 verbose gentlyRm don't care about contents; nuking F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\formstream
+310 silly gentlyRm F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib is being purged from base F:\workspaceforweb\node\wechatn
+311 verbose gentlyRm don't care about contents; nuking F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib
+312 silly gunzTarPerm modes [ '777', '666' ]
+313 verbose tar unpack C:\Users\iibm\AppData\Roaming\npm-cache\urllib\2.0.2\package.tgz
+314 verbose tar unpacking to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib
+315 silly gentlyRm F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib is being purged
+316 verbose gentlyRm don't care about contents; nuking F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib
+317 silly gunzTarPerm modes [ '777', '666' ]
+318 silly gunzTarPerm extractEntry package.json
+319 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+320 silly gunzTarPerm extractEntry package.json
+321 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+322 silly gunzTarPerm extractEntry .npmignore
+323 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+324 silly gunzTarPerm extractEntry README.md
+325 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+326 silly gunzTarPerm extractEntry .npmignore
+327 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+328 silly gunzTarPerm extractEntry README.md
+329 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+330 silly gunzTarPerm extractEntry index.js
+331 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+332 silly gunzTarPerm extractEntry AUTHORS
+333 silly gunzTarPerm modified mode [ 'AUTHORS', 420, 438 ]
+334 silly gunzTarPerm extractEntry index.js
+335 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+336 silly gunzTarPerm extractEntry History.md
+337 silly gunzTarPerm modified mode [ 'History.md', 420, 438 ]
+338 silly gunzTarPerm extractEntry .jshintrc
+339 silly gunzTarPerm modified mode [ '.jshintrc', 420, 438 ]
+340 silly gunzTarPerm extractEntry AUTHORS
+341 silly gunzTarPerm modified mode [ 'AUTHORS', 420, 438 ]
+342 silly gunzTarPerm extractEntry History.md
+343 silly gunzTarPerm modified mode [ 'History.md', 420, 438 ]
+344 silly gunzTarPerm extractEntry .jshintignore
+345 silly gunzTarPerm modified mode [ '.jshintignore', 420, 438 ]
+346 silly gunzTarPerm extractEntry lib/formstream.js
+347 silly gunzTarPerm modified mode [ 'lib/formstream.js', 420, 438 ]
+348 silly gunzTarPerm extractEntry lib/urllib.js
+349 silly gunzTarPerm modified mode [ 'lib/urllib.js', 420, 438 ]
+350 verbose write writing to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\formstream\package.json
+351 info preinstall formstream@1.0.0
+352 verbose readDependencies loading dependencies from F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\formstream\package.json
+353 verbose write writing to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\package.json
+354 silly prepareForInstallMany adding buffer-concat@~0.0.1 from formstream dependencies
+355 silly prepareForInstallMany adding destroy@~1.0.3 from formstream dependencies
+356 silly prepareForInstallMany adding mime@~1.2.11 from formstream dependencies
+357 silly prepareForInstallMany adding pause-stream@~0.0.11 from formstream dependencies
+358 verbose readDependencies loading dependencies from F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\formstream\package.json
+359 info preinstall urllib@2.0.2
+360 verbose readDependencies loading dependencies from F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\package.json
+361 silly cache add args [ 'buffer-concat@~0.0.1', null ]
+362 verbose cache add spec buffer-concat@~0.0.1
+363 silly cache add args [ 'destroy@~1.0.3', null ]
+364 verbose cache add spec destroy@~1.0.3
+365 silly cache add parsed spec { raw: 'buffer-concat@~0.0.1',
+365 silly cache add   scope: null,
+365 silly cache add   name: 'buffer-concat',
+365 silly cache add   rawSpec: '~0.0.1',
+365 silly cache add   spec: '>=0.0.1 <0.1.0',
+365 silly cache add   type: 'range' }
+366 silly addNamed buffer-concat@>=0.0.1 <0.1.0
+367 verbose addNamed ">=0.0.1 <0.1.0" is a valid semver range for buffer-concat
+368 silly addNameRange { name: 'buffer-concat',
+368 silly addNameRange   range: '>=0.0.1 <0.1.0',
+368 silly addNameRange   hasData: false }
+369 silly mapToRegistry name buffer-concat
+370 silly mapToRegistry using default registry
+371 silly mapToRegistry registry http://registry.cnpmjs.org/
+372 silly mapToRegistry uri http://registry.cnpmjs.org/buffer-concat
+373 verbose addNameRange registry:http://registry.cnpmjs.org/buffer-concat not in flight; fetching
+374 silly cache add parsed spec { raw: 'destroy@~1.0.3',
+374 silly cache add   scope: null,
+374 silly cache add   name: 'destroy',
+374 silly cache add   rawSpec: '~1.0.3',
+374 silly cache add   spec: '>=1.0.3 <1.1.0',
+374 silly cache add   type: 'range' }
+375 silly addNamed destroy@>=1.0.3 <1.1.0
+376 verbose addNamed ">=1.0.3 <1.1.0" is a valid semver range for destroy
+377 silly addNameRange { name: 'destroy', range: '>=1.0.3 <1.1.0', hasData: false }
+378 silly mapToRegistry name destroy
+379 silly mapToRegistry using default registry
+380 silly mapToRegistry registry http://registry.cnpmjs.org/
+381 silly mapToRegistry uri http://registry.cnpmjs.org/destroy
+382 verbose addNameRange registry:http://registry.cnpmjs.org/destroy not in flight; fetching
+383 silly cache add args [ 'mime@~1.2.11', null ]
+384 verbose cache add spec mime@~1.2.11
+385 silly cache add parsed spec { raw: 'mime@~1.2.11',
+385 silly cache add   scope: null,
+385 silly cache add   name: 'mime',
+385 silly cache add   rawSpec: '~1.2.11',
+385 silly cache add   spec: '>=1.2.11 <1.3.0',
+385 silly cache add   type: 'range' }
+386 silly addNamed mime@>=1.2.11 <1.3.0
+387 verbose addNamed ">=1.2.11 <1.3.0" is a valid semver range for mime
+388 silly addNameRange { name: 'mime', range: '>=1.2.11 <1.3.0', hasData: false }
+389 silly mapToRegistry name mime
+390 silly mapToRegistry using default registry
+391 silly mapToRegistry registry http://registry.cnpmjs.org/
+392 silly mapToRegistry uri http://registry.cnpmjs.org/mime
+393 verbose addNameRange registry:http://registry.cnpmjs.org/mime not in flight; fetching
+394 silly cache add args [ 'pause-stream@~0.0.11', null ]
+395 verbose cache add spec pause-stream@~0.0.11
+396 silly cache add parsed spec { raw: 'pause-stream@~0.0.11',
+396 silly cache add   scope: null,
+396 silly cache add   name: 'pause-stream',
+396 silly cache add   rawSpec: '~0.0.11',
+396 silly cache add   spec: '>=0.0.11 <0.1.0',
+396 silly cache add   type: 'range' }
+397 silly addNamed pause-stream@>=0.0.11 <0.1.0
+398 verbose addNamed ">=0.0.11 <0.1.0" is a valid semver range for pause-stream
+399 silly addNameRange { name: 'pause-stream',
+399 silly addNameRange   range: '>=0.0.11 <0.1.0',
+399 silly addNameRange   hasData: false }
+400 silly mapToRegistry name pause-stream
+401 silly mapToRegistry using default registry
+402 silly mapToRegistry registry http://registry.cnpmjs.org/
+403 silly mapToRegistry uri http://registry.cnpmjs.org/pause-stream
+404 verbose addNameRange registry:http://registry.cnpmjs.org/pause-stream not in flight; fetching
+405 verbose request uri http://registry.cnpmjs.org/buffer-concat
+406 verbose request no auth needed
+407 info attempt registry request try #1 at 20:33:17
+408 http request GET http://registry.cnpmjs.org/buffer-concat
+409 silly prepareForInstallMany adding debug@~2.1.0 from urllib dependencies
+410 silly prepareForInstallMany adding default-user-agent@~0.0.1 from urllib dependencies
+411 silly prepareForInstallMany adding digest-header@~0.0.1 from urllib dependencies
+412 silly prepareForInstallMany adding iconv-lite@~0.4.4 from urllib dependencies
+413 silly prepareForInstallMany adding media-typer@~0.3.0 from urllib dependencies
+414 silly prepareForInstallMany adding native-or-bluebird@~1.1.2 from urllib dependencies
+415 verbose readDependencies loading dependencies from F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\package.json
+416 silly cache add args [ 'digest-header@~0.0.1', null ]
+417 verbose cache add spec digest-header@~0.0.1
+418 silly cache add parsed spec { raw: 'digest-header@~0.0.1',
+418 silly cache add   scope: null,
+418 silly cache add   name: 'digest-header',
+418 silly cache add   rawSpec: '~0.0.1',
+418 silly cache add   spec: '>=0.0.1 <0.1.0',
+418 silly cache add   type: 'range' }
+419 silly addNamed digest-header@>=0.0.1 <0.1.0
+420 verbose addNamed ">=0.0.1 <0.1.0" is a valid semver range for digest-header
+421 silly addNameRange { name: 'digest-header',
+421 silly addNameRange   range: '>=0.0.1 <0.1.0',
+421 silly addNameRange   hasData: false }
+422 silly mapToRegistry name digest-header
+423 silly mapToRegistry using default registry
+424 silly mapToRegistry registry http://registry.cnpmjs.org/
+425 silly mapToRegistry uri http://registry.cnpmjs.org/digest-header
+426 verbose addNameRange registry:http://registry.cnpmjs.org/digest-header not in flight; fetching
+427 silly cache add args [ 'iconv-lite@~0.4.4', null ]
+428 verbose cache add spec iconv-lite@~0.4.4
+429 silly cache add parsed spec { raw: 'iconv-lite@~0.4.4',
+429 silly cache add   scope: null,
+429 silly cache add   name: 'iconv-lite',
+429 silly cache add   rawSpec: '~0.4.4',
+429 silly cache add   spec: '>=0.4.4 <0.5.0',
+429 silly cache add   type: 'range' }
+430 silly addNamed iconv-lite@>=0.4.4 <0.5.0
+431 verbose addNamed ">=0.4.4 <0.5.0" is a valid semver range for iconv-lite
+432 silly addNameRange { name: 'iconv-lite', range: '>=0.4.4 <0.5.0', hasData: false }
+433 silly mapToRegistry name iconv-lite
+434 silly mapToRegistry using default registry
+435 silly mapToRegistry registry http://registry.cnpmjs.org/
+436 silly mapToRegistry uri http://registry.cnpmjs.org/iconv-lite
+437 verbose addNameRange registry:http://registry.cnpmjs.org/iconv-lite not in flight; fetching
+438 silly cache add args [ 'media-typer@~0.3.0', null ]
+439 verbose cache add spec media-typer@~0.3.0
+440 silly cache add parsed spec { raw: 'media-typer@~0.3.0',
+440 silly cache add   scope: null,
+440 silly cache add   name: 'media-typer',
+440 silly cache add   rawSpec: '~0.3.0',
+440 silly cache add   spec: '>=0.3.0 <0.4.0',
+440 silly cache add   type: 'range' }
+441 silly addNamed media-typer@>=0.3.0 <0.4.0
+442 verbose addNamed ">=0.3.0 <0.4.0" is a valid semver range for media-typer
+443 silly addNameRange { name: 'media-typer', range: '>=0.3.0 <0.4.0', hasData: false }
+444 silly mapToRegistry name media-typer
+445 silly mapToRegistry using default registry
+446 silly mapToRegistry registry http://registry.cnpmjs.org/
+447 silly mapToRegistry uri http://registry.cnpmjs.org/media-typer
+448 verbose addNameRange registry:http://registry.cnpmjs.org/media-typer not in flight; fetching
+449 silly cache add args [ 'native-or-bluebird@~1.1.2', null ]
+450 verbose cache add spec native-or-bluebird@~1.1.2
+451 silly cache add parsed spec { raw: 'native-or-bluebird@~1.1.2',
+451 silly cache add   scope: null,
+451 silly cache add   name: 'native-or-bluebird',
+451 silly cache add   rawSpec: '~1.1.2',
+451 silly cache add   spec: '>=1.1.2 <1.2.0',
+451 silly cache add   type: 'range' }
+452 silly addNamed native-or-bluebird@>=1.1.2 <1.2.0
+453 verbose addNamed ">=1.1.2 <1.2.0" is a valid semver range for native-or-bluebird
+454 silly addNameRange { name: 'native-or-bluebird',
+454 silly addNameRange   range: '>=1.1.2 <1.2.0',
+454 silly addNameRange   hasData: false }
+455 silly mapToRegistry name native-or-bluebird
+456 silly mapToRegistry using default registry
+457 silly mapToRegistry registry http://registry.cnpmjs.org/
+458 silly mapToRegistry uri http://registry.cnpmjs.org/native-or-bluebird
+459 verbose addNameRange registry:http://registry.cnpmjs.org/native-or-bluebird not in flight; fetching
+460 silly cache add args [ 'debug@~2.1.0', null ]
+461 verbose cache add spec debug@~2.1.0
+462 silly cache add parsed spec { raw: 'debug@~2.1.0',
+462 silly cache add   scope: null,
+462 silly cache add   name: 'debug',
+462 silly cache add   rawSpec: '~2.1.0',
+462 silly cache add   spec: '>=2.1.0 <2.2.0',
+462 silly cache add   type: 'range' }
+463 silly addNamed debug@>=2.1.0 <2.2.0
+464 verbose addNamed ">=2.1.0 <2.2.0" is a valid semver range for debug
+465 silly addNameRange { name: 'debug', range: '>=2.1.0 <2.2.0', hasData: false }
+466 silly mapToRegistry name debug
+467 silly mapToRegistry using default registry
+468 silly mapToRegistry registry http://registry.cnpmjs.org/
+469 silly mapToRegistry uri http://registry.cnpmjs.org/debug
+470 verbose addNameRange registry:http://registry.cnpmjs.org/debug not in flight; fetching
+471 silly cache add args [ 'default-user-agent@~0.0.1', null ]
+472 verbose cache add spec default-user-agent@~0.0.1
+473 silly cache add parsed spec { raw: 'default-user-agent@~0.0.1',
+473 silly cache add   scope: null,
+473 silly cache add   name: 'default-user-agent',
+473 silly cache add   rawSpec: '~0.0.1',
+473 silly cache add   spec: '>=0.0.1 <0.1.0',
+473 silly cache add   type: 'range' }
+474 silly addNamed default-user-agent@>=0.0.1 <0.1.0
+475 verbose addNamed ">=0.0.1 <0.1.0" is a valid semver range for default-user-agent
+476 silly addNameRange { name: 'default-user-agent',
+476 silly addNameRange   range: '>=0.0.1 <0.1.0',
+476 silly addNameRange   hasData: false }
+477 silly mapToRegistry name default-user-agent
+478 silly mapToRegistry using default registry
+479 silly mapToRegistry registry http://registry.cnpmjs.org/
+480 silly mapToRegistry uri http://registry.cnpmjs.org/default-user-agent
+481 verbose addNameRange registry:http://registry.cnpmjs.org/default-user-agent not in flight; fetching
+482 verbose request uri http://registry.cnpmjs.org/digest-header
+483 verbose request no auth needed
+484 info attempt registry request try #1 at 20:33:17
+485 http request GET http://registry.cnpmjs.org/digest-header
+486 verbose request uri http://registry.cnpmjs.org/native-or-bluebird
+487 verbose request no auth needed
+488 info attempt registry request try #1 at 20:33:17
+489 http request GET http://registry.cnpmjs.org/native-or-bluebird
+490 verbose request uri http://registry.cnpmjs.org/default-user-agent
+491 verbose request no auth needed
+492 info attempt registry request try #1 at 20:33:17
+493 http request GET http://registry.cnpmjs.org/default-user-agent
+494 verbose request uri http://registry.cnpmjs.org/destroy
+495 verbose request no auth needed
+496 info attempt registry request try #1 at 20:33:17
+497 http request GET http://registry.cnpmjs.org/destroy
+498 verbose request uri http://registry.cnpmjs.org/mime
+499 verbose request no auth needed
+500 info attempt registry request try #1 at 20:33:17
+501 http request GET http://registry.cnpmjs.org/mime
+502 verbose request uri http://registry.cnpmjs.org/pause-stream
+503 verbose request no auth needed
+504 info attempt registry request try #1 at 20:33:17
+505 http request GET http://registry.cnpmjs.org/pause-stream
+506 verbose request uri http://registry.cnpmjs.org/iconv-lite
+507 verbose request no auth needed
+508 info attempt registry request try #1 at 20:33:17
+509 http request GET http://registry.cnpmjs.org/iconv-lite
+510 verbose request uri http://registry.cnpmjs.org/debug
+511 verbose request no auth needed
+512 info attempt registry request try #1 at 20:33:17
+513 http request GET http://registry.cnpmjs.org/debug
+514 verbose request uri http://registry.cnpmjs.org/media-typer
+515 verbose request no auth needed
+516 info attempt registry request try #1 at 20:33:17
+517 http request GET http://registry.cnpmjs.org/media-typer
+518 http 200 http://registry.cnpmjs.org/buffer-concat
+519 silly get cb [ 200,
+519 silly get   { server: 'nginx/1.4.6 (Ubuntu)',
+519 silly get     date: 'Fri, 21 Aug 2015 12:33:09 GMT',
+519 silly get     'content-type': 'application/json; charset=utf-8',
+519 silly get     'transfer-encoding': 'chunked',
+519 silly get     connection: 'keep-alive',
+519 silly get     'x-readtime': '8',
+519 silly get     'content-encoding': 'gzip' } ]
+520 verbose get saving buffer-concat to C:\Users\iibm\AppData\Roaming\npm-cache\registry.cnpmjs.org\buffer-concat\.cache.json
+521 silly addNameRange number 2 { name: 'buffer-concat', range: '>=0.0.1 <0.1.0', hasData: true }
+522 silly addNameRange versions [ 'buffer-concat', [ '0.0.1' ] ]
+523 silly addNamed buffer-concat@0.0.1
+524 verbose addNamed "0.0.1" is a plain semver version for buffer-concat
+525 silly mapToRegistry name buffer-concat
+526 silly mapToRegistry using default registry
+527 silly mapToRegistry registry http://registry.cnpmjs.org/
+528 silly mapToRegistry uri http://registry.cnpmjs.org/buffer-concat
+529 verbose addRemoteTarball http://registry.cnpmjs.org/buffer-concat/download/buffer-concat-0.0.1.tgz not in flight; adding
+530 verbose addRemoteTarball [ 'http://registry.cnpmjs.org/buffer-concat/download/buffer-concat-0.0.1.tgz',
+530 verbose addRemoteTarball   '43e1e3c77f3d22fb55bea6890a92d03778c4c10a' ]
+531 info retry fetch attempt 1 at 20:33:17
+532 info attempt registry request try #1 at 20:33:17
+533 http fetch GET http://registry.cnpmjs.org/buffer-concat/download/buffer-concat-0.0.1.tgz
+534 http fetch 200 http://registry.cnpmjs.org/buffer-concat/download/buffer-concat-0.0.1.tgz
+535 http 200 http://registry.cnpmjs.org/mime
+536 silly get cb [ 200,
+536 silly get   { server: 'nginx/1.4.6 (Ubuntu)',
+536 silly get     date: 'Fri, 21 Aug 2015 12:33:10 GMT',
+536 silly get     'content-type': 'application/json; charset=utf-8',
+536 silly get     'transfer-encoding': 'chunked',
+536 silly get     connection: 'keep-alive',
+536 silly get     'x-readtime': '18',
+536 silly get     'content-encoding': 'gzip' } ]
+537 verbose get saving mime to C:\Users\iibm\AppData\Roaming\npm-cache\registry.cnpmjs.org\mime\.cache.json
+538 silly fetchAndShaCheck shasum 43e1e3c77f3d22fb55bea6890a92d03778c4c10a
+539 silly addNameRange number 2 { name: 'mime', range: '>=1.2.11 <1.3.0', hasData: true }
+540 silly addNameRange versions [ 'mime',
+540 silly addNameRange   [ '1.3.4',
+540 silly addNameRange     '1.3.3',
+540 silly addNameRange     '1.3.2',
+540 silly addNameRange     '1.3.0',
+540 silly addNameRange     '1.2.11',
+540 silly addNameRange     '1.2.10',
+540 silly addNameRange     '1.2.9',
+540 silly addNameRange     '1.2.8',
+540 silly addNameRange     '1.2.7',
+540 silly addNameRange     '1.2.6',
+540 silly addNameRange     '1.2.5',
+540 silly addNameRange     '1.2.4',
+540 silly addNameRange     '1.2.3',
+540 silly addNameRange     '1.2.2',
+540 silly addNameRange     '1.1.0',
+540 silly addNameRange     '1.2.1',
+540 silly addNameRange     '1.0.0' ] ]
+541 silly addNamed mime@1.2.11
+542 verbose addNamed "1.2.11" is a plain semver version for mime
+543 verbose addTmpTarball C:\Users\iibm\AppData\Local\Temp\npm-154228-5aaf040e\registry.cnpmjs.org\buffer-concat\download\buffer-concat-0.0.1.tgz not in flight; adding
+544 verbose addTmpTarball already have metadata; skipping unpack for buffer-concat@0.0.1
+545 silly cache afterAdd buffer-concat@0.0.1
+546 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\buffer-concat\0.0.1\package\package.json not in flight; writing
+547 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\buffer-concat\0.0.1\package\package.json written
+548 silly cache afterAdd mime@1.2.11
+549 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\mime\1.2.11\package\package.json not in flight; writing
+550 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\mime\1.2.11\package\package.json written
+551 http 200 http://registry.cnpmjs.org/media-typer
+552 silly get cb [ 200,
+552 silly get   { server: 'nginx/1.4.6 (Ubuntu)',
+552 silly get     date: 'Fri, 21 Aug 2015 12:33:10 GMT',
+552 silly get     'content-type': 'application/json; charset=utf-8',
+552 silly get     'transfer-encoding': 'chunked',
+552 silly get     connection: 'keep-alive',
+552 silly get     'x-readtime': '14',
+552 silly get     'content-encoding': 'gzip' } ]
+553 verbose get saving media-typer to C:\Users\iibm\AppData\Roaming\npm-cache\registry.cnpmjs.org\media-typer\.cache.json
+554 silly addNameRange number 2 { name: 'media-typer', range: '>=0.3.0 <0.4.0', hasData: true }
+555 silly addNameRange versions [ 'media-typer', [ '0.3.0', '0.2.0', '0.1.0', '0.0.0' ] ]
+556 silly addNamed media-typer@0.3.0
+557 verbose addNamed "0.3.0" is a plain semver version for media-typer
+558 silly cache afterAdd media-typer@0.3.0
+559 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\media-typer\0.3.0\package\package.json not in flight; writing
+560 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\media-typer\0.3.0\package\package.json written
+561 http 200 http://registry.cnpmjs.org/iconv-lite
+562 silly get cb [ 200,
+562 silly get   { server: 'nginx/1.4.6 (Ubuntu)',
+562 silly get     date: 'Fri, 21 Aug 2015 12:33:10 GMT',
+562 silly get     'content-type': 'application/json; charset=utf-8',
+562 silly get     'transfer-encoding': 'chunked',
+562 silly get     connection: 'keep-alive',
+562 silly get     'x-readtime': '20',
+562 silly get     'content-encoding': 'gzip' } ]
+563 verbose get saving iconv-lite to C:\Users\iibm\AppData\Roaming\npm-cache\registry.cnpmjs.org\iconv-lite\.cache.json
+564 silly addNameRange number 2 { name: 'iconv-lite', range: '>=0.4.4 <0.5.0', hasData: true }
+565 silly addNameRange versions [ 'iconv-lite',
+565 silly addNameRange   [ '0.4.11',
+565 silly addNameRange     '0.4.10',
+565 silly addNameRange     '0.4.9',
+565 silly addNameRange     '0.4.8',
+565 silly addNameRange     '0.4.7',
+565 silly addNameRange     '0.4.6',
+565 silly addNameRange     '0.4.5',
+565 silly addNameRange     '0.4.4',
+565 silly addNameRange     '0.4.3',
+565 silly addNameRange     '0.4.2',
+565 silly addNameRange     '0.4.1',
+565 silly addNameRange     '0.4.0',
+565 silly addNameRange     '0.4.0-pre3',
+565 silly addNameRange     '0.4.0-pre2',
+565 silly addNameRange     '0.4.0-pre',
+565 silly addNameRange     '0.2.11',
+565 silly addNameRange     '0.2.10',
+565 silly addNameRange     '0.2.9',
+565 silly addNameRange     '0.2.8',
+565 silly addNameRange     '0.2.7',
+565 silly addNameRange     '0.2.6',
+565 silly addNameRange     '0.2.5',
+565 silly addNameRange     '0.2.4',
+565 silly addNameRange     '0.2.3',
+565 silly addNameRange     '0.2.1',
+565 silly addNameRange     '0.2.0',
+565 silly addNameRange     '0.1.4',
+565 silly addNameRange     '0.1.3',
+565 silly addNameRange     '0.1.2',
+565 silly addNameRange     '0.1.1',
+565 silly addNameRange     '0.1.0' ] ]
+566 silly addNamed iconv-lite@0.4.11
+567 verbose addNamed "0.4.11" is a plain semver version for iconv-lite
+568 silly cache afterAdd iconv-lite@0.4.11
+569 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\iconv-lite\0.4.11\package\package.json not in flight; writing
+570 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\iconv-lite\0.4.11\package\package.json written
+571 http 200 http://registry.cnpmjs.org/pause-stream
+572 silly get cb [ 200,
+572 silly get   { server: 'nginx/1.4.6 (Ubuntu)',
+572 silly get     date: 'Fri, 21 Aug 2015 12:33:13 GMT',
+572 silly get     'content-type': 'application/json; charset=utf-8',
+572 silly get     'transfer-encoding': 'chunked',
+572 silly get     connection: 'keep-alive',
+572 silly get     'x-readtime': '14',
+572 silly get     'content-encoding': 'gzip' } ]
+573 verbose get saving pause-stream to C:\Users\iibm\AppData\Roaming\npm-cache\registry.cnpmjs.org\pause-stream\.cache.json
+574 silly addNameRange number 2 { name: 'pause-stream', range: '>=0.0.11 <0.1.0', hasData: true }
+575 silly addNameRange versions [ 'pause-stream',
+575 silly addNameRange   [ '0.0.11',
+575 silly addNameRange     '0.0.10',
+575 silly addNameRange     '0.0.9',
+575 silly addNameRange     '0.0.8',
+575 silly addNameRange     '0.0.7',
+575 silly addNameRange     '0.0.6',
+575 silly addNameRange     '0.0.5',
+575 silly addNameRange     '0.0.4',
+575 silly addNameRange     '0.0.3',
+575 silly addNameRange     '0.0.2',
+575 silly addNameRange     '0.0.0' ] ]
+576 silly addNamed pause-stream@0.0.11
+577 verbose addNamed "0.0.11" is a plain semver version for pause-stream
+578 silly cache afterAdd pause-stream@0.0.11
+579 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\pause-stream\0.0.11\package\package.json not in flight; writing
+580 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\pause-stream\0.0.11\package\package.json written
+581 http 200 http://registry.cnpmjs.org/debug
+582 silly get cb [ 200,
+582 silly get   { server: 'nginx/1.4.6 (Ubuntu)',
+582 silly get     date: 'Fri, 21 Aug 2015 12:33:11 GMT',
+582 silly get     'content-type': 'application/json; charset=utf-8',
+582 silly get     'transfer-encoding': 'chunked',
+582 silly get     connection: 'keep-alive',
+582 silly get     'x-readtime': '26',
+582 silly get     'content-encoding': 'gzip' } ]
+583 verbose get saving debug to C:\Users\iibm\AppData\Roaming\npm-cache\registry.cnpmjs.org\debug\.cache.json
+584 silly addNameRange number 2 { name: 'debug', range: '>=2.1.0 <2.2.0', hasData: true }
+585 silly addNameRange versions [ 'debug',
+585 silly addNameRange   [ '2.2.0',
+585 silly addNameRange     '2.1.3',
+585 silly addNameRange     '2.1.2',
+585 silly addNameRange     '2.1.1',
+585 silly addNameRange     '2.1.0',
+585 silly addNameRange     '2.0.0',
+585 silly addNameRange     '1.0.4',
+585 silly addNameRange     '1.0.3',
+585 silly addNameRange     '1.0.2',
+585 silly addNameRange     '1.0.1',
+585 silly addNameRange     '1.0.0',
+585 silly addNameRange     '0.8.1',
+585 silly addNameRange     '0.8.0',
+585 silly addNameRange     '0.7.4',
+585 silly addNameRange     '0.7.3',
+585 silly addNameRange     '0.7.2',
+585 silly addNameRange     '0.7.1',
+585 silly addNameRange     '0.7.0',
+585 silly addNameRange     '0.6.0',
+585 silly addNameRange     '0.5.0',
+585 silly addNameRange     '0.4.1',
+585 silly addNameRange     '0.4.0',
+585 silly addNameRange     '0.3.0',
+585 silly addNameRange     '0.2.0',
+585 silly addNameRange     '0.1.0',
+585 silly addNameRange     '0.0.1' ] ]
+586 silly addNamed debug@2.1.3
+587 verbose addNamed "2.1.3" is a plain semver version for debug
+588 silly cache afterAdd debug@2.1.3
+589 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\debug\2.1.3\package\package.json not in flight; writing
+590 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\debug\2.1.3\package\package.json written
+591 http 200 http://registry.cnpmjs.org/native-or-bluebird
+592 silly get cb [ 200,
+592 silly get   { server: 'nginx/1.4.6 (Ubuntu)',
+592 silly get     date: 'Fri, 21 Aug 2015 12:33:10 GMT',
+592 silly get     'content-type': 'application/json; charset=utf-8',
+592 silly get     'transfer-encoding': 'chunked',
+592 silly get     connection: 'keep-alive',
+592 silly get     'x-readtime': '16',
+592 silly get     'content-encoding': 'gzip' } ]
+593 verbose get saving native-or-bluebird to C:\Users\iibm\AppData\Roaming\npm-cache\registry.cnpmjs.org\native-or-bluebird\.cache.json
+594 silly addNameRange number 2 { name: 'native-or-bluebird',
+594 silly addNameRange   range: '>=1.1.2 <1.2.0',
+594 silly addNameRange   hasData: true }
+595 silly addNameRange versions [ 'native-or-bluebird',
+595 silly addNameRange   [ '1.2.0', '1.1.2', '1.1.1', '1.1.0', '1.0.0' ] ]
+596 silly addNamed native-or-bluebird@1.1.2
+597 verbose addNamed "1.1.2" is a plain semver version for native-or-bluebird
+598 silly mapToRegistry name native-or-bluebird
+599 silly mapToRegistry using default registry
+600 silly mapToRegistry registry http://registry.cnpmjs.org/
+601 silly mapToRegistry uri http://registry.cnpmjs.org/native-or-bluebird
+602 verbose addRemoteTarball http://registry.cnpmjs.org/native-or-bluebird/download/native-or-bluebird-1.1.2.tgz not in flight; adding
+603 verbose addRemoteTarball [ 'http://registry.cnpmjs.org/native-or-bluebird/download/native-or-bluebird-1.1.2.tgz',
+603 verbose addRemoteTarball   '3921e110232d1eb790f3dac61bb370531c7d356e' ]
+604 info retry fetch attempt 1 at 20:33:24
+605 info attempt registry request try #1 at 20:33:24
+606 http fetch GET http://registry.cnpmjs.org/native-or-bluebird/download/native-or-bluebird-1.1.2.tgz
+607 http 200 http://registry.cnpmjs.org/default-user-agent
+608 silly get cb [ 200,
+608 silly get   { server: 'nginx/1.4.6 (Ubuntu)',
+608 silly get     date: 'Fri, 21 Aug 2015 12:33:10 GMT',
+608 silly get     'content-type': 'application/json; charset=utf-8',
+608 silly get     'transfer-encoding': 'chunked',
+608 silly get     connection: 'keep-alive',
+608 silly get     'x-readtime': '10',
+608 silly get     'content-encoding': 'gzip' } ]
+609 verbose get saving default-user-agent to C:\Users\iibm\AppData\Roaming\npm-cache\registry.cnpmjs.org\default-user-agent\.cache.json
+610 silly addNameRange number 2 { name: 'default-user-agent',
+610 silly addNameRange   range: '>=0.0.1 <0.1.0',
+610 silly addNameRange   hasData: true }
+611 silly addNameRange versions [ 'default-user-agent', [ '1.0.0', '0.0.1' ] ]
+612 silly addNamed default-user-agent@0.0.1
+613 verbose addNamed "0.0.1" is a plain semver version for default-user-agent
+614 silly mapToRegistry name default-user-agent
+615 silly mapToRegistry using default registry
+616 silly mapToRegistry registry http://registry.cnpmjs.org/
+617 silly mapToRegistry uri http://registry.cnpmjs.org/default-user-agent
+618 verbose addRemoteTarball http://registry.cnpmjs.org/default-user-agent/download/default-user-agent-0.0.1.tgz not in flight; adding
+619 verbose addRemoteTarball [ 'http://registry.cnpmjs.org/default-user-agent/download/default-user-agent-0.0.1.tgz',
+619 verbose addRemoteTarball   'afb124c58ada0635f4ef6d0c15dd906555098ab1' ]
+620 info retry fetch attempt 1 at 20:33:24
+621 info attempt registry request try #1 at 20:33:24
+622 http fetch GET http://registry.cnpmjs.org/default-user-agent/download/default-user-agent-0.0.1.tgz
+623 http fetch 200 http://registry.cnpmjs.org/default-user-agent/download/default-user-agent-0.0.1.tgz
+624 silly fetchAndShaCheck shasum afb124c58ada0635f4ef6d0c15dd906555098ab1
+625 verbose addTmpTarball C:\Users\iibm\AppData\Local\Temp\npm-154228-5aaf040e\registry.cnpmjs.org\default-user-agent\download\default-user-agent-0.0.1.tgz not in flight; adding
+626 verbose addTmpTarball already have metadata; skipping unpack for default-user-agent@0.0.1
+627 silly cache afterAdd default-user-agent@0.0.1
+628 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\default-user-agent\0.0.1\package\package.json not in flight; writing
+629 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\default-user-agent\0.0.1\package\package.json written
+630 http fetch 200 http://registry.cnpmjs.org/native-or-bluebird/download/native-or-bluebird-1.1.2.tgz
+631 silly fetchAndShaCheck shasum 3921e110232d1eb790f3dac61bb370531c7d356e
+632 verbose addTmpTarball C:\Users\iibm\AppData\Local\Temp\npm-154228-5aaf040e\registry.cnpmjs.org\native-or-bluebird\download\native-or-bluebird-1.1.2.tgz not in flight; adding
+633 verbose addTmpTarball already have metadata; skipping unpack for native-or-bluebird@1.1.2
+634 silly cache afterAdd native-or-bluebird@1.1.2
+635 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\native-or-bluebird\1.1.2\package\package.json not in flight; writing
+636 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\native-or-bluebird\1.1.2\package\package.json written
+637 http 200 http://registry.cnpmjs.org/digest-header
+638 silly get cb [ 200,
+638 silly get   { server: 'nginx/1.4.6 (Ubuntu)',
+638 silly get     date: 'Fri, 21 Aug 2015 12:33:10 GMT',
+638 silly get     'content-type': 'application/json; charset=utf-8',
+638 silly get     'transfer-encoding': 'chunked',
+638 silly get     connection: 'keep-alive',
+638 silly get     'x-readtime': '10',
+638 silly get     'content-encoding': 'gzip' } ]
+639 verbose get saving digest-header to C:\Users\iibm\AppData\Roaming\npm-cache\registry.cnpmjs.org\digest-header\.cache.json
+640 silly addNameRange number 2 { name: 'digest-header', range: '>=0.0.1 <0.1.0', hasData: true }
+641 silly addNameRange versions [ 'digest-header', [ '0.0.1', '0.0.0' ] ]
+642 silly addNamed digest-header@0.0.1
+643 verbose addNamed "0.0.1" is a plain semver version for digest-header
+644 silly mapToRegistry name digest-header
+645 silly mapToRegistry using default registry
+646 silly mapToRegistry registry http://registry.cnpmjs.org/
+647 silly mapToRegistry uri http://registry.cnpmjs.org/digest-header
+648 verbose addRemoteTarball http://registry.cnpmjs.org/digest-header/download/digest-header-0.0.1.tgz not in flight; adding
+649 verbose addRemoteTarball [ 'http://registry.cnpmjs.org/digest-header/download/digest-header-0.0.1.tgz',
+649 verbose addRemoteTarball   '11ccf6deec5766ac379744d901c12cba49514be6' ]
+650 info retry fetch attempt 1 at 20:33:30
+651 info attempt registry request try #1 at 20:33:30
+652 http fetch GET http://registry.cnpmjs.org/digest-header/download/digest-header-0.0.1.tgz
+653 http fetch 200 http://registry.cnpmjs.org/digest-header/download/digest-header-0.0.1.tgz
+654 silly fetchAndShaCheck shasum 11ccf6deec5766ac379744d901c12cba49514be6
+655 verbose addTmpTarball C:\Users\iibm\AppData\Local\Temp\npm-154228-5aaf040e\registry.cnpmjs.org\digest-header\download\digest-header-0.0.1.tgz not in flight; adding
+656 verbose addTmpTarball already have metadata; skipping unpack for digest-header@0.0.1
+657 silly cache afterAdd digest-header@0.0.1
+658 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\digest-header\0.0.1\package\package.json not in flight; writing
+659 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\digest-header\0.0.1\package\package.json written
+660 silly install resolved [ { name: 'media-typer',
+660 silly install resolved     description: 'Simple RFC 6838 media type parser and formatter',
+660 silly install resolved     version: '0.3.0',
+660 silly install resolved     author:
+660 silly install resolved      { name: 'Douglas Christopher Wilson',
+660 silly install resolved        email: 'doug@somethingdoug.com' },
+660 silly install resolved     license: 'MIT',
+660 silly install resolved     repository:
+660 silly install resolved      { type: 'git',
+660 silly install resolved        url: 'git+https://github.com/jshttp/media-typer.git' },
+660 silly install resolved     devDependencies: { istanbul: '0.3.2', mocha: '~1.21.4', should: '~4.0.4' },
+660 silly install resolved     files: [ 'LICENSE', 'HISTORY.md', 'index.js' ],
+660 silly install resolved     engines: { node: '>= 0.6' },
+660 silly install resolved     scripts:
+660 silly install resolved      { test: 'mocha --reporter spec --check-leaks --bail test/',
+660 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/',
+660 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/' },
+660 silly install resolved     gitHead: 'd49d41ffd0bb5a0655fa44a59df2ec0bfc835b16',
+660 silly install resolved     bugs: { url: 'https://github.com/jshttp/media-typer/issues' },
+660 silly install resolved     homepage: 'https://github.com/jshttp/media-typer',
+660 silly install resolved     _id: 'media-typer@0.3.0',
+660 silly install resolved     _shasum: '8710d7af0aa626f8fffa1ce00168545263255748',
+660 silly install resolved     _from: 'media-typer@>=0.3.0 <0.4.0',
+660 silly install resolved     _npmVersion: '1.4.21',
+660 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+660 silly install resolved     maintainers: [ [Object] ],
+660 silly install resolved     dist:
+660 silly install resolved      { shasum: '8710d7af0aa626f8fffa1ce00168545263255748',
+660 silly install resolved        size: 4189,
+660 silly install resolved        noattachment: false,
+660 silly install resolved        tarball: 'http://registry.cnpmjs.org/media-typer/download/media-typer-0.3.0.tgz' },
+660 silly install resolved     directories: {},
+660 silly install resolved     publish_time: 1410150744363,
+660 silly install resolved     _cnpm_publish_time: 1410150744363,
+660 silly install resolved     _resolved: 'http://registry.cnpmjs.org/media-typer/download/media-typer-0.3.0.tgz',
+660 silly install resolved     readme: 'ERROR: No README data found!' },
+660 silly install resolved   { name: 'iconv-lite',
+660 silly install resolved     description: 'Convert character encodings in pure javascript.',
+660 silly install resolved     version: '0.4.11',
+660 silly install resolved     license: 'MIT',
+660 silly install resolved     keywords: [ 'iconv', 'convert', 'charset', 'icu' ],
+660 silly install resolved     author: { name: 'Alexander Shtuchkin', email: 'ashtuchkin@gmail.com' },
+660 silly install resolved     contributors:
+660 silly install resolved      [ [Object],
+660 silly install resolved        [Object],
+660 silly install resolved        [Object],
+660 silly install resolved        [Object],
+660 silly install resolved        [Object],
+660 silly install resolved        [Object],
+660 silly install resolved        [Object],
+660 silly install resolved        [Object],
+660 silly install resolved        [Object],
+660 silly install resolved        [Object],
+660 silly install resolved        [Object],
+660 silly install resolved        [Object] ],
+660 silly install resolved     main: './lib/index.js',
+660 silly install resolved     homepage: 'https://github.com/ashtuchkin/iconv-lite',
+660 silly install resolved     bugs: { url: 'https://github.com/ashtuchkin/iconv-lite/issues' },
+660 silly install resolved     repository:
+660 silly install resolved      { type: 'git',
+660 silly install resolved        url: 'git://github.com/ashtuchkin/iconv-lite.git' },
+660 silly install resolved     engines: { node: '>=0.8.0' },
+660 silly install resolved     scripts:
+660 silly install resolved      { coverage: 'istanbul cover _mocha -- --grep .',
+660 silly install resolved        'coverage-open': 'open coverage/lcov-report/index.html',
+660 silly install resolved        test: 'mocha --reporter spec --grep .' },
+660 silly install resolved     browser: { './extend-node': false, './streams': false },
+660 silly install resolved     devDependencies:
+660 silly install resolved      { mocha: '*',
+660 silly install resolved        request: '2.47',
+660 silly install resolved        unorm: '*',
+660 silly install resolved        errto: '*',
+660 silly install resolved        async: '*',
+660 silly install resolved        istanbul: '*',
+660 silly install resolved        iconv: '2.1' },
+660 silly install resolved     gitHead: 'e285b7c31eb0406cf5a8e3e09bc16fbd2786360f',
+660 silly install resolved     _id: 'iconv-lite@0.4.11',
+660 silly install resolved     _shasum: '2ecb42fd294744922209a2e7c404dac8793d8ade',
+660 silly install resolved     _from: 'iconv-lite@>=0.4.4 <0.5.0',
+660 silly install resolved     _npmVersion: '2.10.1',
+660 silly install resolved     _nodeVersion: '0.12.4',
+660 silly install resolved     _npmUser: { name: 'ashtuchkin', email: 'ashtuchkin@gmail.com' },
+660 silly install resolved     maintainers: [ [Object] ],
+660 silly install resolved     dist:
+660 silly install resolved      { shasum: '2ecb42fd294744922209a2e7c404dac8793d8ade',
+660 silly install resolved        size: 183995,
+660 silly install resolved        noattachment: false,
+660 silly install resolved        tarball: 'http://registry.cnpmjs.org/iconv-lite/download/iconv-lite-0.4.11.tgz' },
+660 silly install resolved     directories: {},
+660 silly install resolved     publish_time: 1435958989475,
+660 silly install resolved     _cnpm_publish_time: 1435958989475,
+660 silly install resolved     _resolved: 'http://registry.cnpmjs.org/iconv-lite/download/iconv-lite-0.4.11.tgz',
+660 silly install resolved     readme: 'ERROR: No README data found!' },
+660 silly install resolved   { name: 'debug',
+660 silly install resolved     version: '2.1.3',
+660 silly install resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/debug.git' },
+660 silly install resolved     description: 'small debugging utility',
+660 silly install resolved     keywords: [ 'debug', 'log', 'debugger' ],
+660 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+660 silly install resolved     contributors: [ [Object] ],
+660 silly install resolved     license: 'MIT',
+660 silly install resolved     dependencies: { ms: '0.7.0' },
+660 silly install resolved     devDependencies: { browserify: '9.0.3', mocha: '*' },
+660 silly install resolved     main: './node.js',
+660 silly install resolved     browser: './browser.js',
+660 silly install resolved     component: { scripts: [Object] },
+660 silly install resolved     readme: '# debug\n\n  tiny node.js debugging utility modelled after node core\'s debugging technique.\n\n## Installation\n\n```bash\n$ npm install debug\n```\n\n## Usage\n\n With `debug` you simply invoke the exported function to generate your debug function, passing it a name which will determine if a noop function is returned, or a decorated `console.error`, so all of the `console` format string goodies you\'re used to work fine. A unique color is selected per-function for visibility.\n\nExample _app.js_:\n\n```js\nvar debug = require(\'debug\')(\'http\')\n  , http = require(\'http\')\n  , name = \'My App\';\n\n// fake app\n\ndebug(\'booting %s\', name);\n\nhttp.createServer(function(req, res){\n  debug(req.method + \' \' + req.url);\n  res.end(\'hello\\n\');\n}).listen(3000, function(){\n  debug(\'listening\');\n});\n\n// fake worker of some kind\n\nrequire(\'./worker\');\n```\n\nExample _worker.js_:\n\n```js\nvar debug = require(\'debug\')(\'worker\');\n\nsetInterval(function(){\n  debug(\'doing some work\');\n}, 1000);\n```\n\n The __DEBUG__ environment variable is then used to enable these based on space or comma-delimited names. Here are some examples:\n\n  ![debug http and worker](http://f.cl.ly/items/18471z1H402O24072r1J/Screenshot.png)\n\n  ![debug worker](http://f.cl.ly/items/1X413v1a3M0d3C2c1E0i/Screenshot.png)\n\n#### Windows note\n\n On Windows the environment variable is set using the `set` command. \n \n ```cmd\n set DEBUG=*,-not_this\n ```\n\nThen, run the program to be debugged as usual.\n\n## Millisecond diff\n\n  When actively developing an application it can be useful to see when the time spent between one `debug()` call and the next. Suppose for example you invoke `debug()` before requesting a resource, and after as well, the "+NNNms" will show you how much time was spent between calls.\n\n  ![](http://f.cl.ly/items/2i3h1d3t121M2Z1A3Q0N/Screenshot.png)\n\n  When stdout is not a TTY, `Date#toUTCString()` is used, making it more useful for logging the debug information as shown below:\n\n  ![](http://f.cl.ly/items/112H3i0e0o0P0a2Q2r11/Screenshot.png)\n\n## Conventions\n\n If you\'re using this in one or more of your libraries, you _should_ use the name of your library so that developers may toggle debugging as desired without guessing names. If you have more than one debuggers you _should_ prefix them with your library name and use ":" to separate features. For example "bodyParser" from Connect would then be "connect:bodyParser".\n\n## Wildcards\n\n  The `*` character may be used as a wildcard. Suppose for example your library has debuggers named "connect:bodyParser", "connect:compress", "connect:session", instead of listing all three with `DEBUG=connect:bodyParser,connect.compress,connect:session`, you may simply do `DEBUG=connect:*`, or to run everything using this module simply use `DEBUG=*`.\n\n  You can also exclude specific debuggers by prefixing them with a "-" character.  For example, `DEBUG=*,-connect:*` would include all debuggers except those starting with "connect:".\n\n## Browser support\n\n  Debug works in the browser as well, currently persisted by `localStorage`. Consider the situation shown below where you have `worker:a` and `worker:b`, and wish to debug both. Somewhere in the code on your page, include:\n\n```js\nwindow.myDebug = require("debug");\n```\n\n  ("debug" is a global object in the browser so we give this object a different name.) When your page is open in the browser, type the following in the console:\n\n```js\nmyDebug.enable("worker:*")\n```\n\n  Refresh the page. Debug output will continue to be sent to the console until it is disabled by typing `myDebug.disable()` in the console.\n\n```js\na = debug(\'worker:a\');\nb = debug(\'worker:b\');\n\nsetInterval(function(){\n  a(\'doing some work\');\n}, 1000);\n\nsetInterval(function(){\n  b(\'doing some work\');\n}, 1200);\n```\n\n#### Web Inspector Colors\n\n  Colors are also enabled on "Web Inspectors" that understand the `%c` formatting\n  option. These are WebKit web inspectors, Firefox ([since version\n  31](https://hacks.mozilla.org/2014/05/editable-box-model-multiple-selection-sublime-text-keys-much-more-firefox-developer-tools-episode-31/))\n  and the Firebug plugin for Firefox (any version).\n\n  Colored output looks something like:\n\n  ![](https://cloud.githubusercontent.com/assets/71256/3139768/b98c5fd8-e8ef-11e3-862a-f7253b6f47c6.png)\n\n### stderr vs stdout\n\nYou can set an alternative logging method per-namespace by overriding the `log` method on a per-namespace or globally:\n\nExample _stdout.js_:\n\n```js\nvar debug = require(\'debug\');\nvar error = debug(\'app:error\');\n\n// by default stderr is used\nerror(\'goes to stderr!\');\n\nvar log = debug(\'app:log\');\n// set this namespace to log via console.log\nlog.log = console.log.bind(console); // don\'t forget to bind to console!\nlog(\'goes to stdout\');\nerror(\'still goes to stderr!\');\n\n// set all output to go via console.info\n// overrides all per-namespace log settings\ndebug.log = console.info.bind(console);\nerror(\'now goes to stdout via console.info\');\nlog(\'still goes to stdout, but via console.info now\');\n```\n\n## Authors\n\n - TJ Holowaychuk\n - Nathan Rajlich\n\n## License\n\n(The MIT License)\n\nCopyright (c) 2014 TJ Holowaychuk &lt;tj@vision-media.ca&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n',
+660 silly install resolved     readmeFilename: 'Readme.md',
+660 silly install resolved     bugs: { url: 'https://github.com/visionmedia/debug/issues' },
+660 silly install resolved     homepage: 'https://github.com/visionmedia/debug',
+660 silly install resolved     _id: 'debug@2.1.3',
+660 silly install resolved     _shasum: 'ce8ab1b5ee8fbee2bfa3b633cab93d366b63418e',
+660 silly install resolved     _from: 'debug@>=2.1.0 <2.2.0',
+660 silly install resolved     _resolved: 'https://registry.npmjs.org/debug/-/debug-2.1.3.tgz' },
+660 silly install resolved   { name: 'default-user-agent',
+660 silly install resolved     version: '0.0.1',
+660 silly install resolved     description: 'Default user agent string for nodejs http request',
+660 silly install resolved     main: 'index.js',
+660 silly install resolved     scripts: { test: 'make test-all' },
+660 silly install resolved     config: { cov: [Object] },
+660 silly install resolved     dependencies: {},
+660 silly install resolved     devDependencies:
+660 silly install resolved      { autod: '*',
+660 silly install resolved        contributors: '*',
+660 silly install resolved        should: '*',
+660 silly install resolved        jshint: '*',
+660 silly install resolved        cov: '*',
+660 silly install resolved        istanbul: '*',
+660 silly install resolved        mocha: '*' },
+660 silly install resolved     homepage: 'https://github.com/fengmk2/default-user-agent',
+660 silly install resolved     repository:
+660 silly install resolved      { type: 'git',
+660 silly install resolved        url: 'git://github.com/fengmk2/default-user-agent.git',
+660 silly install resolved        web: 'https://github.com/fengmk2/default-user-agent' },
+660 silly install resolved     bugs:
+660 silly install resolved      { url: 'https://github.com/fengmk2/default-user-agent/issues',
+660 silly install resolved        email: 'fengmk2@gmail.com' },
+660 silly install resolved     keywords: [ 'user-agent', 'ua', 'useragent', 'request', 'http' ],
+660 silly install resolved     engines: { node: '>= 0.10.0' },
+660 silly install resolved     author:
+660 silly install resolved      { name: 'fengmk2',
+660 silly install resolved        email: 'fengmk2@gmail.com',
+660 silly install resolved        url: 'http://fengmk2.github.com' },
+660 silly install resolved     license: 'MIT',
+660 silly install resolved     contributors: [ [Object] ],
+660 silly install resolved     _id: 'default-user-agent@0.0.1',
+660 silly install resolved     dist:
+660 silly install resolved      { shasum: 'afb124c58ada0635f4ef6d0c15dd906555098ab1',
+660 silly install resolved        size: 2212,
+660 silly install resolved        noattachment: false,
+660 silly install resolved        tarball: 'http://registry.cnpmjs.org/default-user-agent/download/default-user-agent-0.0.1.tgz' },
+660 silly install resolved     _from: 'default-user-agent@>=0.0.1 <0.1.0',
+660 silly install resolved     _npmVersion: '1.3.25',
+660 silly install resolved     _npmUser: { name: 'fengmk2', email: 'fengmk2@gmail.com' },
+660 silly install resolved     maintainers: [ [Object] ],
+660 silly install resolved     directories: {},
+660 silly install resolved     publish_time: 1394673874966,
+660 silly install resolved     _cnpm_publish_time: 1394673874966,
+660 silly install resolved     _shasum: 'afb124c58ada0635f4ef6d0c15dd906555098ab1',
+660 silly install resolved     _resolved: 'http://registry.cnpmjs.org/default-user-agent/download/default-user-agent-0.0.1.tgz' },
+660 silly install resolved   { name: 'native-or-bluebird',
+660 silly install resolved     description: 'use either the native Promise or Bluebird',
+660 silly install resolved     version: '1.1.2',
+660 silly install resolved     author:
+660 silly install resolved      { name: 'Jonathan Ong',
+660 silly install resolved        email: 'me@jongleberry.com',
+660 silly install resolved        url: 'http://jongleberry.com' },
+660 silly install resolved     license: 'MIT',
+660 silly install resolved     repository:
+660 silly install resolved      { type: 'git',
+660 silly install resolved        url: 'https://github.com/normalize/native-or-bluebird' },
+660 silly install resolved     keywords: [ 'bluebird', 'promise', 'promises' ],
+660 silly install resolved     devDependencies: { bluebird: '*', istanbul: '0', mocha: '1' },
+660 silly install resolved     scripts:
+660 silly install resolved      { test: 'mocha --reporter spec',
+660 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot',
+660 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter dot' },
+660 silly install resolved     files: [ 'index.js', 'promise.js', 'LICENSE' ],
+660 silly install resolved     gitHead: '652f5744d08bf2121a2cc3cc1a560d4d7d96b591',
+660 silly install resolved     bugs: { url: 'https://github.com/normalize/native-or-bluebird/issues' },
+660 silly install resolved     homepage: 'https://github.com/normalize/native-or-bluebird',
+660 silly install resolved     _id: 'native-or-bluebird@1.1.2',
+660 silly install resolved     _shasum: '3921e110232d1eb790f3dac61bb370531c7d356e',
+660 silly install resolved     _from: 'native-or-bluebird@>=1.1.2 <1.2.0',
+660 silly install resolved     _npmVersion: '2.1.5',
+660 silly install resolved     _nodeVersion: '0.11.14',
+660 silly install resolved     _npmUser: { name: 'jongleberry', email: 'jonathanrichardong@gmail.com' },
+660 silly install resolved     maintainers: [ [Object], [Object] ],
+660 silly install resolved     dist:
+660 silly install resolved      { shasum: '3921e110232d1eb790f3dac61bb370531c7d356e',
+660 silly install resolved        size: 2077,
+660 silly install resolved        noattachment: false,
+660 silly install resolved        tarball: 'http://registry.cnpmjs.org/native-or-bluebird/download/native-or-bluebird-1.1.2.tgz' },
+660 silly install resolved     directories: {},
+660 silly install resolved     publish_time: 1414469974296,
+660 silly install resolved     _cnpm_publish_time: 1414469974296,
+660 silly install resolved     _resolved: 'http://registry.cnpmjs.org/native-or-bluebird/download/native-or-bluebird-1.1.2.tgz' },
+660 silly install resolved   { name: 'digest-header',
+660 silly install resolved     version: '0.0.1',
+660 silly install resolved     description: 'Digest access authentication header helper',
+660 silly install resolved     main: 'index.js',
+660 silly install resolved     scripts: { test: 'make test-all' },
+660 silly install resolved     config: { cov: [Object] },
+660 silly install resolved     dependencies: { utility: '0.1.11' },
+660 silly install resolved     devDependencies:
+660 silly install resolved      { autod: '*',
+660 silly install resolved        contributors: '*',
+660 silly install resolved        cov: '*',
+660 silly install resolved        'istanbul-harmony': '*',
+660 silly install resolved        jshint: '*',
+660 silly install resolved        mocha: '*',
+660 silly install resolved        should: '3.2.0' },
+660 silly install resolved     homepage: 'https://github.com/fengmk2/digest-header',
+660 silly install resolved     repository:
+660 silly install resolved      { type: 'git',
+660 silly install resolved        url: 'git://github.com/fengmk2/digest-header.git',
+660 silly install resolved        web: 'https://github.com/fengmk2/digest-header' },
+660 silly install resolved     bugs:
+660 silly install resolved      { url: 'https://github.com/fengmk2/digest-header/issues',
+660 silly install resolved        email: 'fengmk2@gmail.com' },
+660 silly install resolved     keywords:
+660 silly install resolved      [ 'digest',
+660 silly install resolved        'http-digest',
+660 silly install resolved        'baseauth',
+660 silly install resolved        'www-authenticate',
+660 silly install resolved        'authentication',
+660 silly install resolved        'http-authentication',
+660 silly install resolved        'digestauth',
+660 silly install resolved        'digest-auth',
+660 silly install resolved        'digest-header' ],
+660 silly install resolved     engines: { node: '>= 0.10.0' },
+660 silly install resolved     author:
+660 silly install resolved      { name: 'fengmk2',
+660 silly install resolved        email: 'fengmk2@gmail.com',
+660 silly install resolved        url: 'http://fengmk2.github.com' },
+660 silly install resolved     license: 'MIT',
+660 silly install resolved     contributors: [ [Object] ],
+660 silly install resolved     _id: 'digest-header@0.0.1',
+660 silly install resolved     dist:
+660 silly install resolved      { shasum: '11ccf6deec5766ac379744d901c12cba49514be6',
+660 silly install resolved        size: 3052,
+660 silly install resolved        noattachment: false,
+660 silly install resolved        tarball: 'http://registry.cnpmjs.org/digest-header/download/digest-header-0.0.1.tgz' },
+660 silly install resolved     _from: 'digest-header@>=0.0.1 <0.1.0',
+660 silly install resolved     _npmVersion: '1.4.6',
+660 silly install resolved     _npmUser: { name: 'fengmk2', email: 'fengmk2@gmail.com' },
+660 silly install resolved     maintainers: [ [Object] ],
+660 silly install resolved     directories: {},
+660 silly install resolved     publish_time: 1396236113035,
+660 silly install resolved     _cnpm_publish_time: 1396236113035,
+660 silly install resolved     _shasum: '11ccf6deec5766ac379744d901c12cba49514be6',
+660 silly install resolved     _resolved: 'http://registry.cnpmjs.org/digest-header/download/digest-header-0.0.1.tgz' } ]
+661 info install media-typer@0.3.0 into F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib
+662 info install iconv-lite@0.4.11 into F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib
+663 info install debug@2.1.3 into F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib
+664 info install default-user-agent@0.0.1 into F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib
+665 info install native-or-bluebird@1.1.2 into F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib
+666 info install digest-header@0.0.1 into F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib
+667 info installOne media-typer@0.3.0
+668 verbose installOne of media-typer to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib not in flight; installing
+669 info installOne iconv-lite@0.4.11
+670 verbose installOne of iconv-lite to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib not in flight; installing
+671 info installOne debug@2.1.3
+672 verbose installOne of debug to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib not in flight; installing
+673 info installOne default-user-agent@0.0.1
+674 verbose installOne of default-user-agent to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib not in flight; installing
+675 info installOne native-or-bluebird@1.1.2
+676 verbose installOne of native-or-bluebird to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib not in flight; installing
+677 info installOne digest-header@0.0.1
+678 verbose installOne of digest-header to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib not in flight; installing
+679 verbose lock using C:\Users\iibm\AppData\Roaming\npm-cache\_locks\media-typer-f89c954949bb06e3.lock for F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\media-typer
+680 verbose lock using C:\Users\iibm\AppData\Roaming\npm-cache\_locks\debug-b8646b29fbd53cd9.lock for F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\debug
+681 verbose lock using C:\Users\iibm\AppData\Roaming\npm-cache\_locks\iconv-lite-cd804a1feaf2c517.lock for F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\iconv-lite
+682 silly install write writing media-typer 0.3.0 to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\media-typer
+683 silly install write writing debug 2.1.3 to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\debug
+684 silly install write writing iconv-lite 0.4.11 to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\iconv-lite
+685 verbose lock using C:\Users\iibm\AppData\Roaming\npm-cache\_locks\default-user-agent-d9bde32eaff4b2b6.lock for F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\default-user-agent
+686 verbose lock using C:\Users\iibm\AppData\Roaming\npm-cache\_locks\native-or-bluebird-032562968c3269b1.lock for F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\native-or-bluebird
+687 verbose lock using C:\Users\iibm\AppData\Roaming\npm-cache\_locks\digest-header-dbfcb8ad3859c2f2.lock for F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header
+688 silly install write writing default-user-agent 0.0.1 to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\default-user-agent
+689 silly install write writing native-or-bluebird 1.1.2 to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\native-or-bluebird
+690 silly install write writing digest-header 0.0.1 to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header
+691 verbose unbuild node_modules\wechat-api\node_modules\urllib\node_modules\media-typer
+692 verbose unbuild node_modules\wechat-api\node_modules\urllib\node_modules\debug
+693 verbose unbuild node_modules\wechat-api\node_modules\urllib\node_modules\iconv-lite
+694 verbose unbuild node_modules\wechat-api\node_modules\urllib\node_modules\default-user-agent
+695 verbose unbuild node_modules\wechat-api\node_modules\urllib\node_modules\native-or-bluebird
+696 verbose unbuild node_modules\wechat-api\node_modules\urllib\node_modules\digest-header
+697 silly gentlyRm F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\media-typer is being purged from base F:\workspaceforweb\node\wechatn
+698 verbose gentlyRm don't care about contents; nuking F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\media-typer
+699 silly gentlyRm F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\debug is being purged from base F:\workspaceforweb\node\wechatn
+700 verbose gentlyRm don't care about contents; nuking F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\debug
+701 silly gentlyRm F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\iconv-lite is being purged from base F:\workspaceforweb\node\wechatn
+702 verbose gentlyRm don't care about contents; nuking F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\iconv-lite
+703 verbose tar unpack C:\Users\iibm\AppData\Roaming\npm-cache\media-typer\0.3.0\package.tgz
+704 verbose tar unpacking to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\media-typer
+705 silly gentlyRm F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\media-typer is being purged
+706 verbose gentlyRm don't care about contents; nuking F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\media-typer
+707 verbose tar unpack C:\Users\iibm\AppData\Roaming\npm-cache\debug\2.1.3\package.tgz
+708 verbose tar unpacking to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\debug
+709 silly gentlyRm F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\debug is being purged
+710 verbose gentlyRm don't care about contents; nuking F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\debug
+711 verbose tar unpack C:\Users\iibm\AppData\Roaming\npm-cache\iconv-lite\0.4.11\package.tgz
+712 verbose tar unpacking to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\iconv-lite
+713 silly gentlyRm F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\iconv-lite is being purged
+714 verbose gentlyRm don't care about contents; nuking F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\iconv-lite
+715 silly gentlyRm F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\default-user-agent is being purged from base F:\workspaceforweb\node\wechatn
+716 verbose gentlyRm don't care about contents; nuking F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\default-user-agent
+717 silly gentlyRm F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\native-or-bluebird is being purged from base F:\workspaceforweb\node\wechatn
+718 verbose gentlyRm don't care about contents; nuking F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\native-or-bluebird
+719 silly gentlyRm F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header is being purged from base F:\workspaceforweb\node\wechatn
+720 verbose gentlyRm don't care about contents; nuking F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header
+721 silly gunzTarPerm modes [ '777', '666' ]
+722 silly gunzTarPerm modes [ '777', '666' ]
+723 silly gunzTarPerm modes [ '777', '666' ]
+724 verbose tar unpack C:\Users\iibm\AppData\Roaming\npm-cache\default-user-agent\0.0.1\package.tgz
+725 verbose tar unpacking to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\default-user-agent
+726 silly gentlyRm F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\default-user-agent is being purged
+727 verbose gentlyRm don't care about contents; nuking F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\default-user-agent
+728 verbose tar unpack C:\Users\iibm\AppData\Roaming\npm-cache\native-or-bluebird\1.1.2\package.tgz
+729 verbose tar unpacking to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\native-or-bluebird
+730 silly gentlyRm F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\native-or-bluebird is being purged
+731 verbose gentlyRm don't care about contents; nuking F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\native-or-bluebird
+732 verbose tar unpack C:\Users\iibm\AppData\Roaming\npm-cache\digest-header\0.0.1\package.tgz
+733 verbose tar unpacking to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header
+734 silly gentlyRm F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header is being purged
+735 verbose gentlyRm don't care about contents; nuking F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header
+736 silly gunzTarPerm modes [ '777', '666' ]
+737 silly gunzTarPerm modes [ '777', '666' ]
+738 silly gunzTarPerm modes [ '777', '666' ]
+739 silly gunzTarPerm extractEntry package.json
+740 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+741 silly gunzTarPerm extractEntry package.json
+742 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+743 silly gunzTarPerm extractEntry package.json
+744 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+745 silly gunzTarPerm extractEntry .npmignore
+746 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+747 silly gunzTarPerm extractEntry README.md
+748 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+749 silly gunzTarPerm extractEntry README.md
+750 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+751 silly gunzTarPerm extractEntry LICENSE
+752 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+753 silly gunzTarPerm extractEntry .npmignore
+754 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+755 silly gunzTarPerm extractEntry README.md
+756 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+757 silly gunzTarPerm extractEntry package.json
+758 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+759 silly gunzTarPerm extractEntry .npmignore
+760 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+761 silly gunzTarPerm extractEntry README.md
+762 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+763 silly gunzTarPerm extractEntry index.js
+764 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+765 silly gunzTarPerm extractEntry AUTHORS
+766 silly gunzTarPerm modified mode [ 'AUTHORS', 420, 438 ]
+767 silly gunzTarPerm extractEntry index.js
+768 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+769 silly gunzTarPerm extractEntry promise.js
+770 silly gunzTarPerm modified mode [ 'promise.js', 420, 438 ]
+771 silly gunzTarPerm extractEntry index.js
+772 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+773 silly gunzTarPerm extractEntry AUTHORS
+774 silly gunzTarPerm modified mode [ 'AUTHORS', 420, 438 ]
+775 silly gunzTarPerm extractEntry package.json
+776 silly gunzTarPerm extractEntry History.md
+777 silly gunzTarPerm modified mode [ 'History.md', 420, 438 ]
+778 silly gunzTarPerm extractEntry LICENSE.txt
+779 silly gunzTarPerm modified mode [ 'LICENSE.txt', 420, 438 ]
+780 silly gunzTarPerm extractEntry package.json
+781 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+782 silly gunzTarPerm extractEntry README.md
+783 silly gunzTarPerm extractEntry LICENSE
+784 silly gunzTarPerm extractEntry LICENSE
+785 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+786 silly gunzTarPerm extractEntry encodings/dbcs-codec.js
+787 silly gunzTarPerm modified mode [ 'encodings/dbcs-codec.js', 420, 438 ]
+788 silly gunzTarPerm extractEntry History.md
+789 silly gunzTarPerm modified mode [ 'History.md', 420, 438 ]
+790 silly gunzTarPerm extractEntry LICENSE.txt
+791 silly gunzTarPerm modified mode [ 'LICENSE.txt', 420, 438 ]
+792 silly gunzTarPerm extractEntry .npmignore
+793 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+794 silly gunzTarPerm extractEntry node.js
+795 silly gunzTarPerm modified mode [ 'node.js', 420, 438 ]
+796 silly gunzTarPerm extractEntry encodings/dbcs-data.js
+797 silly gunzTarPerm modified mode [ 'encodings/dbcs-data.js', 420, 438 ]
+798 silly gunzTarPerm extractEntry index.js
+799 silly gunzTarPerm extractEntry HISTORY.md
+800 silly gunzTarPerm extractEntry debug.js
+801 silly gunzTarPerm modified mode [ 'debug.js', 420, 438 ]
+802 silly gunzTarPerm extractEntry browser.js
+803 silly gunzTarPerm modified mode [ 'browser.js', 420, 438 ]
+804 silly gunzTarPerm extractEntry Readme.md
+805 silly gunzTarPerm modified mode [ 'Readme.md', 420, 438 ]
+806 silly gunzTarPerm extractEntry encodings/index.js
+807 silly gunzTarPerm modified mode [ 'encodings/index.js', 420, 438 ]
+808 silly gunzTarPerm extractEntry encodings/internal.js
+809 silly gunzTarPerm modified mode [ 'encodings/internal.js', 420, 438 ]
+810 silly gunzTarPerm extractEntry encodings/sbcs-codec.js
+811 silly gunzTarPerm modified mode [ 'encodings/sbcs-codec.js', 420, 438 ]
+812 silly gunzTarPerm extractEntry encodings/sbcs-data-generated.js
+813 silly gunzTarPerm modified mode [ 'encodings/sbcs-data-generated.js', 420, 438 ]
+814 silly gunzTarPerm extractEntry encodings/sbcs-data.js
+815 silly gunzTarPerm modified mode [ 'encodings/sbcs-data.js', 420, 438 ]
+816 verbose write writing to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\native-or-bluebird\package.json
+817 silly gunzTarPerm extractEntry bower.json
+818 silly gunzTarPerm modified mode [ 'bower.json', 420, 438 ]
+819 silly gunzTarPerm extractEntry .jshintrc
+820 silly gunzTarPerm modified mode [ '.jshintrc', 420, 438 ]
+821 info preinstall native-or-bluebird@1.1.2
+822 verbose readDependencies loading dependencies from F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\native-or-bluebird\package.json
+823 verbose write writing to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\default-user-agent\package.json
+824 silly gunzTarPerm extractEntry component.json
+825 silly gunzTarPerm modified mode [ 'component.json', 420, 438 ]
+826 silly gunzTarPerm extractEntry Makefile
+827 silly gunzTarPerm modified mode [ 'Makefile', 420, 438 ]
+828 verbose readDependencies loading dependencies from F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\native-or-bluebird\package.json
+829 info preinstall default-user-agent@0.0.1
+830 verbose write writing to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\package.json
+831 verbose readDependencies loading dependencies from F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\default-user-agent\package.json
+832 info preinstall digest-header@0.0.1
+833 verbose readDependencies loading dependencies from F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\package.json
+834 verbose write writing to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\media-typer\package.json
+835 silly install resolved []
+836 verbose about to build F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\native-or-bluebird
+837 info build F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\native-or-bluebird
+838 silly gunzTarPerm extractEntry History.md
+839 silly gunzTarPerm modified mode [ 'History.md', 420, 438 ]
+840 verbose readDependencies loading dependencies from F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\default-user-agent\package.json
+841 silly gunzTarPerm extractEntry encodings/utf16.js
+842 silly gunzTarPerm modified mode [ 'encodings/utf16.js', 420, 438 ]
+843 info preinstall media-typer@0.3.0
+844 verbose readDependencies loading dependencies from F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\media-typer\package.json
+845 silly prepareForInstallMany adding utility@0.1.11 from digest-header dependencies
+846 verbose readDependencies loading dependencies from F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\package.json
+847 info linkStuff native-or-bluebird@1.1.2
+848 silly linkStuff native-or-bluebird@1.1.2 has F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules as its parent node_modules
+849 verbose readDependencies loading dependencies from F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\media-typer\package.json
+850 silly install resolved []
+851 verbose about to build F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\default-user-agent
+852 info build F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\default-user-agent
+853 silly install resolved []
+854 verbose about to build F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\media-typer
+855 info build F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\media-typer
+856 silly gunzTarPerm extractEntry encodings/utf7.js
+857 silly gunzTarPerm modified mode [ 'encodings/utf7.js', 420, 438 ]
+858 silly gunzTarPerm extractEntry encodings/tables/big5-added.json
+859 silly gunzTarPerm modified mode [ 'encodings/tables/big5-added.json', 420, 438 ]
+860 verbose linkBins native-or-bluebird@1.1.2
+861 verbose linkMans native-or-bluebird@1.1.2
+862 verbose rebuildBundles native-or-bluebird@1.1.2
+863 silly cache add args [ 'utility@0.1.11', null ]
+864 verbose cache add spec utility@0.1.11
+865 silly cache add parsed spec { raw: 'utility@0.1.11',
+865 silly cache add   scope: null,
+865 silly cache add   name: 'utility',
+865 silly cache add   rawSpec: '0.1.11',
+865 silly cache add   spec: '0.1.11',
+865 silly cache add   type: 'version' }
+866 silly addNamed utility@0.1.11
+867 verbose addNamed "0.1.11" is a plain semver version for utility
+868 silly mapToRegistry name utility
+869 silly mapToRegistry using default registry
+870 silly mapToRegistry registry http://registry.cnpmjs.org/
+871 silly mapToRegistry uri http://registry.cnpmjs.org/utility
+872 verbose addNameVersion registry:http://registry.cnpmjs.org/utility not in flight; fetching
+873 info linkStuff media-typer@0.3.0
+874 silly linkStuff media-typer@0.3.0 has F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules as its parent node_modules
+875 info install native-or-bluebird@1.1.2
+876 verbose request uri http://registry.cnpmjs.org/utility
+877 verbose request no auth needed
+878 info attempt registry request try #1 at 20:33:33
+879 http request GET http://registry.cnpmjs.org/utility
+880 info linkStuff default-user-agent@0.0.1
+881 silly linkStuff default-user-agent@0.0.1 has F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules as its parent node_modules
+882 info postinstall native-or-bluebird@1.1.2
+883 verbose unlock done using C:\Users\iibm\AppData\Roaming\npm-cache\_locks\native-or-bluebird-032562968c3269b1.lock for F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\native-or-bluebird
+884 verbose linkBins media-typer@0.3.0
+885 verbose linkMans media-typer@0.3.0
+886 verbose rebuildBundles media-typer@0.3.0
+887 verbose linkBins default-user-agent@0.0.1
+888 verbose linkMans default-user-agent@0.0.1
+889 verbose rebuildBundles default-user-agent@0.0.1
+890 info install media-typer@0.3.0
+891 info install default-user-agent@0.0.1
+892 info postinstall media-typer@0.3.0
+893 info postinstall default-user-agent@0.0.1
+894 verbose unlock done using C:\Users\iibm\AppData\Roaming\npm-cache\_locks\media-typer-f89c954949bb06e3.lock for F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\media-typer
+895 verbose unlock done using C:\Users\iibm\AppData\Roaming\npm-cache\_locks\default-user-agent-d9bde32eaff4b2b6.lock for F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\default-user-agent
+896 silly gunzTarPerm extractEntry encodings/tables/cp936.json
+897 silly gunzTarPerm modified mode [ 'encodings/tables/cp936.json', 420, 438 ]
+898 silly gunzTarPerm extractEntry encodings/tables/cp949.json
+899 silly gunzTarPerm modified mode [ 'encodings/tables/cp949.json', 420, 438 ]
+900 silly gunzTarPerm extractEntry encodings/tables/cp950.json
+901 silly gunzTarPerm modified mode [ 'encodings/tables/cp950.json', 420, 438 ]
+902 silly gunzTarPerm extractEntry encodings/tables/eucjp.json
+903 silly gunzTarPerm modified mode [ 'encodings/tables/eucjp.json', 420, 438 ]
+904 silly gunzTarPerm extractEntry encodings/tables/gb18030-ranges.json
+905 silly gunzTarPerm modified mode [ 'encodings/tables/gb18030-ranges.json', 420, 438 ]
+906 verbose write writing to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\debug\package.json
+907 silly gunzTarPerm extractEntry encodings/tables/gbk-added.json
+908 silly gunzTarPerm modified mode [ 'encodings/tables/gbk-added.json', 420, 438 ]
+909 silly gunzTarPerm extractEntry encodings/tables/shiftjis.json
+910 silly gunzTarPerm modified mode [ 'encodings/tables/shiftjis.json', 420, 438 ]
+911 silly gunzTarPerm extractEntry .travis.yml
+912 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+913 info preinstall debug@2.1.3
+914 verbose readDependencies loading dependencies from F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\debug\package.json
+915 silly prepareForInstallMany adding ms@0.7.0 from debug dependencies
+916 verbose readDependencies loading dependencies from F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\debug\package.json
+917 silly cache add args [ 'ms@0.7.0', null ]
+918 verbose cache add spec ms@0.7.0
+919 silly cache add parsed spec { raw: 'ms@0.7.0',
+919 silly cache add   scope: null,
+919 silly cache add   name: 'ms',
+919 silly cache add   rawSpec: '0.7.0',
+919 silly cache add   spec: '0.7.0',
+919 silly cache add   type: 'version' }
+920 silly addNamed ms@0.7.0
+921 verbose addNamed "0.7.0" is a plain semver version for ms
+922 silly mapToRegistry name ms
+923 silly mapToRegistry using default registry
+924 silly mapToRegistry registry http://registry.cnpmjs.org/
+925 silly mapToRegistry uri http://registry.cnpmjs.org/ms
+926 verbose addNameVersion registry:http://registry.cnpmjs.org/ms not in flight; fetching
+927 silly gunzTarPerm extractEntry lib/bom-handling.js
+928 silly gunzTarPerm modified mode [ 'lib/bom-handling.js', 420, 438 ]
+929 silly gunzTarPerm extractEntry lib/extend-node.js
+930 silly gunzTarPerm modified mode [ 'lib/extend-node.js', 420, 438 ]
+931 silly gunzTarPerm extractEntry lib/index.js
+932 silly gunzTarPerm modified mode [ 'lib/index.js', 420, 438 ]
+933 silly gunzTarPerm extractEntry lib/streams.js
+934 silly gunzTarPerm modified mode [ 'lib/streams.js', 420, 438 ]
+935 silly gunzTarPerm extractEntry Changelog.md
+936 silly gunzTarPerm modified mode [ 'Changelog.md', 420, 438 ]
+937 verbose request uri http://registry.cnpmjs.org/ms
+938 verbose request no auth needed
+939 info attempt registry request try #1 at 20:33:33
+940 http request GET http://registry.cnpmjs.org/ms
+941 verbose write writing to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\iconv-lite\package.json
+942 info preinstall iconv-lite@0.4.11
+943 verbose readDependencies loading dependencies from F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\iconv-lite\package.json
+944 verbose readDependencies loading dependencies from F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\iconv-lite\package.json
+945 silly install resolved []
+946 verbose about to build F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\iconv-lite
+947 info build F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\iconv-lite
+948 info linkStuff iconv-lite@0.4.11
+949 silly linkStuff iconv-lite@0.4.11 has F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules as its parent node_modules
+950 verbose linkBins iconv-lite@0.4.11
+951 verbose linkMans iconv-lite@0.4.11
+952 verbose rebuildBundles iconv-lite@0.4.11
+953 info install iconv-lite@0.4.11
+954 info postinstall iconv-lite@0.4.11
+955 verbose unlock done using C:\Users\iibm\AppData\Roaming\npm-cache\_locks\iconv-lite-cd804a1feaf2c517.lock for F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\iconv-lite
+956 http 200 http://registry.cnpmjs.org/ms
+957 silly get cb [ 200,
+957 silly get   { server: 'nginx/1.4.6 (Ubuntu)',
+957 silly get     date: 'Fri, 21 Aug 2015 12:33:26 GMT',
+957 silly get     'content-type': 'application/json; charset=utf-8',
+957 silly get     'transfer-encoding': 'chunked',
+957 silly get     connection: 'keep-alive',
+957 silly get     'x-readtime': '14',
+957 silly get     'content-encoding': 'gzip' } ]
+958 verbose get saving ms to C:\Users\iibm\AppData\Roaming\npm-cache\registry.cnpmjs.org\ms\.cache.json
+959 silly mapToRegistry name ms
+960 silly mapToRegistry using default registry
+961 silly mapToRegistry registry http://registry.cnpmjs.org/
+962 silly mapToRegistry uri http://registry.cnpmjs.org/ms
+963 verbose addRemoteTarball http://registry.cnpmjs.org/ms/download/ms-0.7.0.tgz not in flight; adding
+964 verbose addRemoteTarball [ 'http://registry.cnpmjs.org/ms/download/ms-0.7.0.tgz',
+964 verbose addRemoteTarball   '865be94c2e7397ad8a57da6a633a6e2f30798b83' ]
+965 info retry fetch attempt 1 at 20:33:34
+966 info attempt registry request try #1 at 20:33:34
+967 http fetch GET http://registry.cnpmjs.org/ms/download/ms-0.7.0.tgz
+968 http fetch 200 http://registry.cnpmjs.org/ms/download/ms-0.7.0.tgz
+969 silly fetchAndShaCheck shasum 865be94c2e7397ad8a57da6a633a6e2f30798b83
+970 verbose addTmpTarball C:\Users\iibm\AppData\Local\Temp\npm-154228-5aaf040e\registry.cnpmjs.org\ms\download\ms-0.7.0.tgz not in flight; adding
+971 verbose addTmpTarball already have metadata; skipping unpack for ms@0.7.0
+972 silly cache afterAdd ms@0.7.0
+973 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\ms\0.7.0\package\package.json not in flight; writing
+974 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\ms\0.7.0\package\package.json written
+975 silly install resolved [ { name: 'ms',
+975 silly install resolved     version: '0.7.0',
+975 silly install resolved     description: 'Tiny ms conversion utility',
+975 silly install resolved     repository: { type: 'git', url: 'git://github.com/guille/ms.js.git' },
+975 silly install resolved     main: './index',
+975 silly install resolved     devDependencies: { mocha: '*', 'expect.js': '*', serve: '*' },
+975 silly install resolved     component: { scripts: [Object] },
+975 silly install resolved     gitHead: '1e9cd9b05ef0dc26f765434d2bfee42394376e52',
+975 silly install resolved     bugs: { url: 'https://github.com/guille/ms.js/issues' },
+975 silly install resolved     homepage: 'https://github.com/guille/ms.js',
+975 silly install resolved     _id: 'ms@0.7.0',
+975 silly install resolved     scripts: {},
+975 silly install resolved     _shasum: '865be94c2e7397ad8a57da6a633a6e2f30798b83',
+975 silly install resolved     _from: 'ms@0.7.0',
+975 silly install resolved     _npmVersion: '1.4.21',
+975 silly install resolved     _npmUser: { name: 'rauchg', email: 'rauchg@gmail.com' },
+975 silly install resolved     maintainers: [ [Object] ],
+975 silly install resolved     dist:
+975 silly install resolved      { shasum: '865be94c2e7397ad8a57da6a633a6e2f30798b83',
+975 silly install resolved        size: 2275,
+975 silly install resolved        noattachment: false,
+975 silly install resolved        tarball: 'http://registry.cnpmjs.org/ms/download/ms-0.7.0.tgz' },
+975 silly install resolved     directories: {},
+975 silly install resolved     publish_time: 1416815948195,
+975 silly install resolved     _cnpm_publish_time: 1416815948195,
+975 silly install resolved     _resolved: 'http://registry.cnpmjs.org/ms/download/ms-0.7.0.tgz' } ]
+976 info install ms@0.7.0 into F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\debug
+977 info installOne ms@0.7.0
+978 verbose installOne of ms to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\debug not in flight; installing
+979 verbose lock using C:\Users\iibm\AppData\Roaming\npm-cache\_locks\ms-76045659beb192f4.lock for F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\debug\node_modules\ms
+980 silly install write writing ms 0.7.0 to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\debug\node_modules\ms
+981 verbose unbuild node_modules\wechat-api\node_modules\urllib\node_modules\debug\node_modules\ms
+982 silly gentlyRm F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\debug\node_modules\ms is being purged from base F:\workspaceforweb\node\wechatn
+983 verbose gentlyRm don't care about contents; nuking F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\debug\node_modules\ms
+984 verbose tar unpack C:\Users\iibm\AppData\Roaming\npm-cache\ms\0.7.0\package.tgz
+985 verbose tar unpacking to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\debug\node_modules\ms
+986 silly gentlyRm F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\debug\node_modules\ms is being purged
+987 verbose gentlyRm don't care about contents; nuking F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\debug\node_modules\ms
+988 silly gunzTarPerm modes [ '777', '666' ]
+989 silly gunzTarPerm extractEntry package.json
+990 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+991 silly gunzTarPerm extractEntry .npmignore
+992 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+993 silly gunzTarPerm extractEntry README.md
+994 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+995 silly gunzTarPerm extractEntry LICENSE
+996 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+997 silly gunzTarPerm extractEntry index.js
+998 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+999 verbose write writing to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\debug\node_modules\ms\package.json
+1000 info preinstall ms@0.7.0
+1001 verbose readDependencies loading dependencies from F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\debug\node_modules\ms\package.json
+1002 verbose readDependencies loading dependencies from F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\debug\node_modules\ms\package.json
+1003 silly install resolved []
+1004 verbose about to build F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\debug\node_modules\ms
+1005 info build F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\debug\node_modules\ms
+1006 info linkStuff ms@0.7.0
+1007 silly linkStuff ms@0.7.0 has F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\debug\node_modules as its parent node_modules
+1008 verbose linkBins ms@0.7.0
+1009 verbose linkMans ms@0.7.0
+1010 verbose rebuildBundles ms@0.7.0
+1011 info install ms@0.7.0
+1012 info postinstall ms@0.7.0
+1013 verbose unlock done using C:\Users\iibm\AppData\Roaming\npm-cache\_locks\ms-76045659beb192f4.lock for F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\debug\node_modules\ms
+1014 verbose about to build F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\debug
+1015 info build F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\debug
+1016 info linkStuff debug@2.1.3
+1017 silly linkStuff debug@2.1.3 has F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules as its parent node_modules
+1018 verbose linkBins debug@2.1.3
+1019 verbose linkMans debug@2.1.3
+1020 verbose rebuildBundles debug@2.1.3
+1021 verbose rebuildBundles [ 'ms' ]
+1022 info install debug@2.1.3
+1023 info postinstall debug@2.1.3
+1024 verbose unlock done using C:\Users\iibm\AppData\Roaming\npm-cache\_locks\debug-b8646b29fbd53cd9.lock for F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\debug
+1025 http 200 http://registry.cnpmjs.org/utility
+1026 silly get cb [ 200,
+1026 silly get   { server: 'nginx/1.4.6 (Ubuntu)',
+1026 silly get     date: 'Fri, 21 Aug 2015 12:33:26 GMT',
+1026 silly get     'content-type': 'application/json; charset=utf-8',
+1026 silly get     'transfer-encoding': 'chunked',
+1026 silly get     connection: 'keep-alive',
+1026 silly get     'x-readtime': '21',
+1026 silly get     'content-encoding': 'gzip' } ]
+1027 verbose get saving utility to C:\Users\iibm\AppData\Roaming\npm-cache\registry.cnpmjs.org\utility\.cache.json
+1028 silly mapToRegistry name utility
+1029 silly mapToRegistry using default registry
+1030 silly mapToRegistry registry http://registry.cnpmjs.org/
+1031 silly mapToRegistry uri http://registry.cnpmjs.org/utility
+1032 verbose addRemoteTarball http://registry.cnpmjs.org/utility/download/utility-0.1.11.tgz not in flight; adding
+1033 verbose addRemoteTarball [ 'http://registry.cnpmjs.org/utility/download/utility-0.1.11.tgz',
+1033 verbose addRemoteTarball   'fde60cf9b4e4751947a0cf5d104ce29367226715' ]
+1034 info retry fetch attempt 1 at 20:33:40
+1035 info attempt registry request try #1 at 20:33:40
+1036 http fetch GET http://registry.cnpmjs.org/utility/download/utility-0.1.11.tgz
+1037 http fetch 200 http://registry.cnpmjs.org/utility/download/utility-0.1.11.tgz
+1038 silly fetchAndShaCheck shasum fde60cf9b4e4751947a0cf5d104ce29367226715
+1039 verbose addTmpTarball C:\Users\iibm\AppData\Local\Temp\npm-154228-5aaf040e\registry.cnpmjs.org\utility\download\utility-0.1.11.tgz not in flight; adding
+1040 verbose addTmpTarball already have metadata; skipping unpack for utility@0.1.11
+1041 silly cache afterAdd utility@0.1.11
+1042 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\utility\0.1.11\package\package.json not in flight; writing
+1043 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\utility\0.1.11\package\package.json written
+1044 silly install resolved [ { name: 'utility',
+1044 silly install resolved     version: '0.1.11',
+1044 silly install resolved     description: 'A collection of useful utilities.',
+1044 silly install resolved     main: 'index.js',
+1044 silly install resolved     scripts: { test: 'make test-all' },
+1044 silly install resolved     config: { blanket: [Object], 'travis-cov': [Object] },
+1044 silly install resolved     dependencies: { address: '>=0.0.1' },
+1044 silly install resolved     devDependencies:
+1044 silly install resolved      { jshint: '*',
+1044 silly install resolved        contributors: '*',
+1044 silly install resolved        should: '*',
+1044 silly install resolved        mm: '*',
+1044 silly install resolved        moment: '*',
+1044 silly install resolved        blanket: '*',
+1044 silly install resolved        'travis-cov': '*',
+1044 silly install resolved        coveralls: '*',
+1044 silly install resolved        'mocha-lcov-reporter': '*',
+1044 silly install resolved        benchmark: '*',
+1044 silly install resolved        mocha: '*' },
+1044 silly install resolved     homepage: 'https://github.com/fengmk2/utility',
+1044 silly install resolved     repository:
+1044 silly install resolved      { type: 'git',
+1044 silly install resolved        url: 'git://github.com/fengmk2/utility.git',
+1044 silly install resolved        web: 'https://github.com/fengmk2/utility' },
+1044 silly install resolved     keywords: [ 'utility' ],
+1044 silly install resolved     engines: { node: '>= 0.8.0' },
+1044 silly install resolved     author:
+1044 silly install resolved      { name: 'fengmk2',
+1044 silly install resolved        email: 'fengmk2@gmail.com',
+1044 silly install resolved        url: 'http://fengmk2.github.com' },
+1044 silly install resolved     license: 'MIT',
+1044 silly install resolved     contributors: [ [Object], [Object] ],
+1044 silly install resolved     bugs: { url: 'https://github.com/fengmk2/utility/issues' },
+1044 silly install resolved     _id: 'utility@0.1.11',
+1044 silly install resolved     dist:
+1044 silly install resolved      { shasum: 'fde60cf9b4e4751947a0cf5d104ce29367226715',
+1044 silly install resolved        size: 8113,
+1044 silly install resolved        noattachment: false,
+1044 silly install resolved        tarball: 'http://registry.cnpmjs.org/utility/download/utility-0.1.11.tgz' },
+1044 silly install resolved     _from: 'utility@0.1.11',
+1044 silly install resolved     _npmVersion: '1.4.3',
+1044 silly install resolved     _npmUser: { name: 'fengmk2', email: 'fengmk2@gmail.com' },
+1044 silly install resolved     maintainers: [ [Object], [Object] ],
+1044 silly install resolved     directories: {},
+1044 silly install resolved     publish_time: 1394853740592,
+1044 silly install resolved     _cnpm_publish_time: 1394853740592,
+1044 silly install resolved     _shasum: 'fde60cf9b4e4751947a0cf5d104ce29367226715',
+1044 silly install resolved     _resolved: 'http://registry.cnpmjs.org/utility/download/utility-0.1.11.tgz' } ]
+1045 info install utility@0.1.11 into F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header
+1046 info installOne utility@0.1.11
+1047 verbose installOne of utility to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header not in flight; installing
+1048 verbose lock using C:\Users\iibm\AppData\Roaming\npm-cache\_locks\utility-2787ed5aa7444ac8.lock for F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility
+1049 silly install write writing utility 0.1.11 to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility
+1050 verbose unbuild node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility
+1051 silly gentlyRm F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility is being purged from base F:\workspaceforweb\node\wechatn
+1052 verbose gentlyRm don't care about contents; nuking F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility
+1053 verbose tar unpack C:\Users\iibm\AppData\Roaming\npm-cache\utility\0.1.11\package.tgz
+1054 verbose tar unpacking to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility
+1055 silly gentlyRm F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility is being purged
+1056 verbose gentlyRm don't care about contents; nuking F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility
+1057 silly gunzTarPerm modes [ '777', '666' ]
+1058 silly gunzTarPerm extractEntry package.json
+1059 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+1060 silly gunzTarPerm extractEntry .npmignore
+1061 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+1062 silly gunzTarPerm extractEntry README.md
+1063 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+1064 silly gunzTarPerm extractEntry index.js
+1065 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+1066 silly gunzTarPerm extractEntry AUTHORS
+1067 silly gunzTarPerm modified mode [ 'AUTHORS', 420, 438 ]
+1068 silly gunzTarPerm extractEntry History.md
+1069 silly gunzTarPerm modified mode [ 'History.md', 420, 438 ]
+1070 silly gunzTarPerm extractEntry LICENSE.txt
+1071 silly gunzTarPerm modified mode [ 'LICENSE.txt', 420, 438 ]
+1072 silly gunzTarPerm extractEntry benchmark/date_YYYYMMDD.js
+1073 silly gunzTarPerm modified mode [ 'benchmark/date_YYYYMMDD.js', 420, 438 ]
+1074 silly gunzTarPerm extractEntry benchmark/date_format.js
+1075 silly gunzTarPerm modified mode [ 'benchmark/date_format.js', 420, 438 ]
+1076 silly gunzTarPerm extractEntry benchmark/get_paramnames.js
+1077 silly gunzTarPerm modified mode [ 'benchmark/get_paramnames.js', 420, 438 ]
+1078 silly gunzTarPerm extractEntry benchmark/md5.js
+1079 silly gunzTarPerm modified mode [ 'benchmark/md5.js', 420, 438 ]
+1080 silly gunzTarPerm extractEntry lib/utility.js
+1081 silly gunzTarPerm modified mode [ 'lib/utility.js', 420, 438 ]
+1082 verbose write writing to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility\package.json
+1083 info preinstall utility@0.1.11
+1084 verbose readDependencies loading dependencies from F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility\package.json
+1085 silly prepareForInstallMany adding address@>=0.0.1 from utility dependencies
+1086 verbose readDependencies loading dependencies from F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility\package.json
+1087 silly cache add args [ 'address@>=0.0.1', null ]
+1088 verbose cache add spec address@>=0.0.1
+1089 silly cache add parsed spec { raw: 'address@>=0.0.1',
+1089 silly cache add   scope: null,
+1089 silly cache add   name: 'address',
+1089 silly cache add   rawSpec: '>=0.0.1',
+1089 silly cache add   spec: '>=0.0.1',
+1089 silly cache add   type: 'range' }
+1090 silly addNamed address@>=0.0.1
+1091 verbose addNamed ">=0.0.1" is a valid semver range for address
+1092 silly addNameRange { name: 'address', range: '>=0.0.1', hasData: false }
+1093 silly mapToRegistry name address
+1094 silly mapToRegistry using default registry
+1095 silly mapToRegistry registry http://registry.cnpmjs.org/
+1096 silly mapToRegistry uri http://registry.cnpmjs.org/address
+1097 verbose addNameRange registry:http://registry.cnpmjs.org/address not in flight; fetching
+1098 verbose request uri http://registry.cnpmjs.org/address
+1099 verbose request no auth needed
+1100 info attempt registry request try #1 at 20:33:41
+1101 http request GET http://registry.cnpmjs.org/address
+1102 http 200 http://registry.cnpmjs.org/address
+1103 silly get cb [ 200,
+1103 silly get   { server: 'nginx/1.4.6 (Ubuntu)',
+1103 silly get     date: 'Fri, 21 Aug 2015 12:33:34 GMT',
+1103 silly get     'content-type': 'application/json; charset=utf-8',
+1103 silly get     'transfer-encoding': 'chunked',
+1103 silly get     connection: 'keep-alive',
+1103 silly get     'x-readtime': '11',
+1103 silly get     'content-encoding': 'gzip' } ]
+1104 verbose get saving address to C:\Users\iibm\AppData\Roaming\npm-cache\registry.cnpmjs.org\address\.cache.json
+1105 silly addNameRange number 2 { name: 'address', range: '>=0.0.1', hasData: true }
+1106 silly addNameRange versions [ 'address', [ '1.0.0', '0.0.3', '0.0.2', '0.0.1' ] ]
+1107 silly addNamed address@1.0.0
+1108 verbose addNamed "1.0.0" is a plain semver version for address
+1109 silly mapToRegistry name address
+1110 silly mapToRegistry using default registry
+1111 silly mapToRegistry registry http://registry.cnpmjs.org/
+1112 silly mapToRegistry uri http://registry.cnpmjs.org/address
+1113 verbose addRemoteTarball http://registry.cnpmjs.org/address/download/address-1.0.0.tgz not in flight; adding
+1114 verbose addRemoteTarball [ 'http://registry.cnpmjs.org/address/download/address-1.0.0.tgz',
+1114 verbose addRemoteTarball   '20200f7900eeb5f13779e768785c78c32ce2ce86' ]
+1115 info retry fetch attempt 1 at 20:33:42
+1116 info attempt registry request try #1 at 20:33:42
+1117 http fetch GET http://registry.cnpmjs.org/address/download/address-1.0.0.tgz
+1118 http fetch 200 http://registry.cnpmjs.org/address/download/address-1.0.0.tgz
+1119 silly fetchAndShaCheck shasum 20200f7900eeb5f13779e768785c78c32ce2ce86
+1120 verbose addTmpTarball C:\Users\iibm\AppData\Local\Temp\npm-154228-5aaf040e\registry.cnpmjs.org\address\download\address-1.0.0.tgz not in flight; adding
+1121 verbose addTmpTarball already have metadata; skipping unpack for address@1.0.0
+1122 silly cache afterAdd address@1.0.0
+1123 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\address\1.0.0\package\package.json not in flight; writing
+1124 verbose afterAdd C:\Users\iibm\AppData\Roaming\npm-cache\address\1.0.0\package\package.json written
+1125 silly install resolved [ { name: 'address',
+1125 silly install resolved     version: '1.0.0',
+1125 silly install resolved     description: 'Get current machine IP, MAC and DNS servers.',
+1125 silly install resolved     main: 'lib/address.js',
+1125 silly install resolved     files: [ 'lib' ],
+1125 silly install resolved     scripts:
+1125 silly install resolved      { test: 'mocha --check-leaks -R spec -t 5000 test/*.test.js',
+1125 silly install resolved        'test-cov': 'istanbul cover node_modules/.bin/_mocha -- --check-leaks -t 5000 test/*.test.js',
+1125 silly install resolved        'test-travis': 'istanbul cover node_modules/.bin/_mocha --report lcovonly -- --check-leaks -t 5000 test/*.test.js',
+1125 silly install resolved        benchmark: 'matcha',
+1125 silly install resolved        autod: 'autod -w --prefix \'~\'',
+1125 silly install resolved        cnpm: 'npm install --registry=https://registry.npm.taobao.org',
+1125 silly install resolved        contributors: 'contributors -f plain -o AUTHORS' },
+1125 silly install resolved     dependencies: {},
+1125 silly install resolved     devDependencies:
+1125 silly install resolved      { istanbul: '*',
+1125 silly install resolved        matcha: '*',
+1125 silly install resolved        mm: '*',
+1125 silly install resolved        mocha: '*',
+1125 silly install resolved        pedding: '*',
+1125 silly install resolved        should: '*' },
+1125 silly install resolved     repository:
+1125 silly install resolved      { type: 'git',
+1125 silly install resolved        url: 'git://github.com/node-modules/address.git' },
+1125 silly install resolved     keywords: [ 'address', 'ip', 'ipv4', 'mac' ],
+1125 silly install resolved     engines: { node: '>= 0.12.0' },
+1125 silly install resolved     author: { name: 'fengmk2', email: 'fengmk2@gmail.com' },
+1125 silly install resolved     license: 'MIT',
+1125 silly install resolved     gitHead: '4af8781dfb49f7f0682879b0f176cc9fb82d0fc3',
+1125 silly install resolved     bugs: { url: 'https://github.com/node-modules/address/issues' },
+1125 silly install resolved     homepage: 'https://github.com/node-modules/address#readme',
+1125 silly install resolved     _id: 'address@1.0.0',
+1125 silly install resolved     _shasum: '20200f7900eeb5f13779e768785c78c32ce2ce86',
+1125 silly install resolved     _from: 'address@>=0.0.1',
+1125 silly install resolved     _npmVersion: '2.13.3',
+1125 silly install resolved     _nodeVersion: '3.0.0',
+1125 silly install resolved     _npmUser: { name: 'fengmk2', email: 'fengmk2@gmail.com' },
+1125 silly install resolved     maintainers: [ [Object] ],
+1125 silly install resolved     dist:
+1125 silly install resolved      { shasum: '20200f7900eeb5f13779e768785c78c32ce2ce86',
+1125 silly install resolved        size: 4152,
+1125 silly install resolved        noattachment: false,
+1125 silly install resolved        tarball: 'http://registry.cnpmjs.org/address/download/address-1.0.0.tgz' },
+1125 silly install resolved     directories: {},
+1125 silly install resolved     publish_time: 1438818345211,
+1125 silly install resolved     _cnpm_publish_time: 1438818345211,
+1125 silly install resolved     _resolved: 'http://registry.cnpmjs.org/address/download/address-1.0.0.tgz' } ]
+1126 info install address@1.0.0 into F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility
+1127 info installOne address@1.0.0
+1128 verbose installOne of address to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility not in flight; installing
+1129 verbose lock using C:\Users\iibm\AppData\Roaming\npm-cache\_locks\address-27f193255461e535.lock for F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility\node_modules\address
+1130 silly install write writing address 1.0.0 to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility\node_modules\address
+1131 verbose unbuild node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility\node_modules\address
+1132 silly gentlyRm F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility\node_modules\address is being purged from base F:\workspaceforweb\node\wechatn
+1133 verbose gentlyRm don't care about contents; nuking F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility\node_modules\address
+1134 verbose tar unpack C:\Users\iibm\AppData\Roaming\npm-cache\address\1.0.0\package.tgz
+1135 verbose tar unpacking to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility\node_modules\address
+1136 silly gentlyRm F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility\node_modules\address is being purged
+1137 verbose gentlyRm don't care about contents; nuking F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility\node_modules\address
+1138 silly gunzTarPerm modes [ '777', '666' ]
+1139 silly gunzTarPerm extractEntry package.json
+1140 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+1141 silly gunzTarPerm extractEntry README.md
+1142 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+1143 silly gunzTarPerm extractEntry LICENSE.txt
+1144 silly gunzTarPerm modified mode [ 'LICENSE.txt', 420, 438 ]
+1145 silly gunzTarPerm extractEntry lib/address.js
+1146 silly gunzTarPerm modified mode [ 'lib/address.js', 420, 438 ]
+1147 silly gunzTarPerm extractEntry History.md
+1148 silly gunzTarPerm modified mode [ 'History.md', 420, 438 ]
+1149 verbose write writing to F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility\node_modules\address\package.json
+1150 info preinstall address@1.0.0
+1151 verbose readDependencies loading dependencies from F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility\node_modules\address\package.json
+1152 verbose readDependencies loading dependencies from F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility\node_modules\address\package.json
+1153 silly install resolved []
+1154 verbose about to build F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility\node_modules\address
+1155 info build F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility\node_modules\address
+1156 info linkStuff address@1.0.0
+1157 silly linkStuff address@1.0.0 has F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility\node_modules as its parent node_modules
+1158 verbose linkBins address@1.0.0
+1159 verbose linkMans address@1.0.0
+1160 verbose rebuildBundles address@1.0.0
+1161 info install address@1.0.0
+1162 info postinstall address@1.0.0
+1163 verbose unlock done using C:\Users\iibm\AppData\Roaming\npm-cache\_locks\address-27f193255461e535.lock for F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility\node_modules\address
+1164 verbose about to build F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility
+1165 info build F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility
+1166 info linkStuff utility@0.1.11
+1167 silly linkStuff utility@0.1.11 has F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules as its parent node_modules
+1168 verbose linkBins utility@0.1.11
+1169 verbose linkMans utility@0.1.11
+1170 verbose rebuildBundles utility@0.1.11
+1171 verbose rebuildBundles [ 'address' ]
+1172 info install utility@0.1.11
+1173 info postinstall utility@0.1.11
+1174 verbose unlock done using C:\Users\iibm\AppData\Roaming\npm-cache\_locks\utility-2787ed5aa7444ac8.lock for F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header\node_modules\utility
+1175 verbose about to build F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header
+1176 info build F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header
+1177 info linkStuff digest-header@0.0.1
+1178 silly linkStuff digest-header@0.0.1 has F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules as its parent node_modules
+1179 verbose linkBins digest-header@0.0.1
+1180 verbose linkMans digest-header@0.0.1
+1181 verbose rebuildBundles digest-header@0.0.1
+1182 verbose rebuildBundles [ 'utility' ]
+1183 info install digest-header@0.0.1
+1184 info postinstall digest-header@0.0.1
+1185 verbose unlock done using C:\Users\iibm\AppData\Roaming\npm-cache\_locks\digest-header-dbfcb8ad3859c2f2.lock for F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib\node_modules\digest-header
+1186 verbose about to build F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib
+1187 info build F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib
+1188 info linkStuff urllib@2.0.2
+1189 silly linkStuff urllib@2.0.2 has F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules as its parent node_modules
+1190 verbose linkBins urllib@2.0.2
+1191 verbose linkMans urllib@2.0.2
+1192 verbose rebuildBundles urllib@2.0.2
+1193 verbose rebuildBundles [ 'debug',
+1193 verbose rebuildBundles   'default-user-agent',
+1193 verbose rebuildBundles   'digest-header',
+1193 verbose rebuildBundles   'iconv-lite',
+1193 verbose rebuildBundles   'media-typer',
+1193 verbose rebuildBundles   'native-or-bluebird' ]
+1194 info install urllib@2.0.2
+1195 info postinstall urllib@2.0.2
+1196 verbose unlock done using C:\Users\iibm\AppData\Roaming\npm-cache\_locks\urllib-ee83cf1ae920c7a6.lock for F:\workspaceforweb\node\wechatn\node_modules\wechat-api\node_modules\urllib
+1197 verbose stack TypeError: Cannot read property 'emit' of null
+1197 verbose stack     at Socket.connectionErrorHandler (E:\nodejs\node_modules\npm\node_modules\request\request.js:206:24)
+1197 verbose stack     at Socket.g (events.js:199:16)
+1197 verbose stack     at Socket.emit (events.js:129:20)
+1197 verbose stack     at net.js:459:14
+1197 verbose stack     at process._tickCallback (node.js:355:11)
+1198 verbose cwd F:\workspaceforweb\node\wechatn
+1199 error Windows_NT 6.1.7601
+1200 error argv "E:\\nodejs\\\\node.exe" "E:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "wechat-api" "--save"
+1201 error node v0.12.7
+1202 error npm  v2.11.3
+1203 error Cannot read property 'emit' of null
+1204 error If you need help, you may report this error at:
+1204 error     <https://github.com/npm/npm/issues>
+1205 verbose exit [ 1, true ]
