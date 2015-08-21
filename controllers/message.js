@@ -39,9 +39,16 @@ exports.list = function(req,res){
 		if(err){
 			console.log(err)
 		}
-		res.render('messagelist',{
-			title:'消息列表',
-			messages:messages
-		})
+		// res.render('messagelist',{
+		// 	title:'消息列表',
+		// 	messages:messages
+		// })
+	var result = {
+		status:200;
+		message:"success";
+		data:messages;
+	};
+	
+	res.send(JSON.stringify(result));  
 	})
 }
